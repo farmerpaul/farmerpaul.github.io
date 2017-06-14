@@ -5,7 +5,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Presentations - Partnership for Dietetic Education and Practice</title>
+    <title>My Profile - Partnership for Dietetic Education and Practice</title>
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,300i,400,500,700">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="assets/images/favicons/favicon.ico">
   </head>
 
-  <body class="presentations members">
+  <body class="my-profile no-sidebar">
 
     <nav class="navbar navbar-light">
       <div class="container p-x-md">
@@ -102,11 +102,7 @@
 
     <header class="banner">
 
-      <div class="banner-image" style="background-image: url(assets/images/stock-4.jpg);"></div>
-
       <div class="container p-x-md">
-
-        <h2>Library</h2>
 
       </div>
       <div class="breadcrumb-container">
@@ -114,59 +110,120 @@
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
 
-            <li class="breadcrumb-item"><a href="resource-library.html">Library</a></li>
-
-            <li class="breadcrumb-item active">Presentations</li>
+            <li class="breadcrumb-item active">My Profile</li>
           </ol>
         </div>
       </div>
 
     </header>
 
-    <div class="container main-container p-x-md">
-      <div class="row">
-        <aside class="col-xs-3">
-          <div class="sidebar">
-            <h3>Library</h3>
-            <nav class="nav nav-pills nav-stacked">
-
-              <a class="nav-link " href="resource-library.html">Resource Library</a>
-
-              <a class="nav-link active" href="presentations.html">Presentations</a>
-
-            </nav>
+    <main class="container main-container main">
+      <form action="my-profile.html">
+        <h1>Edit Profile</h1>
+        <div class="form-group required ">
+          <label for="userId">User ID</label>
+          <input class="form-control" type="text" id="userId" name="userId" value="sarahsimpson" placeholder="JaneSmith" required>
+        </div>
+        <div class="form-group required ">
+          <label for="password">Password</label>
+          <input class="form-control" type="password" id="password" name="password" value="1234567890" placeholder="••••••••" required>
+        </div>
+        <div class="form-justified">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <div class="select-container">
+              <select class="form-control" id="title" name="title">
+              <option selected>Mrsendblock %}</option>
+              <option>Ms</option>
+              <option>Mr</option>
+            </select>
+            </div>
           </div>
-        </aside>
-        <main class="main col-xs-8 p-l">
-          <h1>Presentations</h1>
+          <div class="form-group required ">
+            <label for="firstName">First Name</label>
+            <input class="form-control" type="text" id="firstName" name="firstName" value="Sarah" placeholder="Jane" required>
+          </div>
+          <div class="form-group required ">
+            <label for="lastName">Last Name</label>
+            <input class="form-control" type="text" id="lastName" name="lastName" value="Simpson" placeholder="Smith" required>
+          </div>
+        </div>
+        <div class="form-group required ">
+          <div class="form-justified">
+            <label for="email">Email Address</label>
+            <small class="text-muted">Your email address will not be displayed on the public website.</small>
+          </div>
+          <input class="form-control" type="email" id="email" name="email" value="s.simpson@gmail.com" placeholder="yourname@company.com" required>
+        </div>
+        <div class="form-group required ">
+          <label for="company">Company/Organization</label>
+          <input class="form-control" type="text" id="company" name="company" value="Dietitians of Canada" placeholder="Company Inc." required>
+        </div>
+        <div class="form-group">
+          <label for="website">Website</label>
+          <input class="form-control" type="text" id="website" name="website" value="dietitians.ca" placeholder="company.com">
+        </div>
+        <div class="form-group">
+          <label for="bio">Bio</label>
+          <textarea class="form-control" id="bio" name="bio" placeholder="Enter a quick bio about yourself here."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input class="form-control" type="text" id="address" name="address" value="480 University Avenue, Suite 604" placeholder="123 Main Street">
+        </div>
+        <div class="form-justified form-justified-equal">
+          <div class="form-group">
+            <label for="city">Address</label>
+            <input class="form-control" type="text" id="city" name="city" value="Toronto" placeholder="Toronto">
+          </div>
+          <div class="form-group">
+            <label for="province">Province</label>
+            <div class="select-container">
+              <select class="form-control" id="province" name="province">
+              <option selected>Ontarioendblock %}</option>
+              <option>Alberta</option>
+              <option>British Columbia</option>
+              <option>Manitoba</option>
+              <option>New Brunswick</option>
+              <option>Newfoundland</option>
+              <option>Nova Scotia</option>
+              <option>Nunavut</option>
+              <option>Northwest Territories</option>
+              <option>Ontario</option>
+              <option>Prince Edward Island</option>
+              <option>Quebec</option>
+              <option>Saskatchewan</option>
+              <option>Yukon</option>
+            </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-justified form-justified-equal">
+          <div class="form-group">
+            <label for="postalCode">Postal / ZIP</label>
+            <input class="form-control" type="text" id="postalCode" name="postalCode" value="M5G 1V2" placeholder="A1A 1A1">
+          </div>
+          <div class="form-group">
+            <label for="country">Country</label>
+            <input class="form-control" type="text" id="country" name="country" value="Canada" placeholder="Canada">
+          </div>
+        </div>
+        <div class="form-justified form-justified-equal">
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input class="form-control" type="text" id="phone" name="phone" value="416 596 0603" placeholder="123 456 7890">
+          </div>
+          <div class="form-group"></div>
+        </div>
+        <div class="captcha-placeholder m-y-md">
+          Space for security CAPTCHA
+        </div>
+        <div class="form-justified validation-message">
 
-          <h2>Category Heading</h2>
-          <a href="#" class="box">
-            <h6>Presentation Title</h6>
-            <p>Presentation Description</p>
-          </a>
-          <a href="#" class="box">
-            <h6>Presentation Title</h6>
-            <p>Presentation Description</p>
-          </a>
-          <a href="#" class="box">
-            <h6>Presentation Title</h6>
-          </a>
-          <h2>Category Heading</h2>
-          <a href="#" class="box">
-            <h6>Presentation Title</h6>
-          </a>
-          <a href="#" class="box">
-            <h6>Presentation Title</h6>
-          </a>
-          <a href="#" class="box">
-            <h6>Presentation Title</h6>
-            <p>Presentation Description</p>
-          </a>
-
-        </main>
-      </div>
-    </div>
+          <input type="submit" class="btn btn-primary" value="Save">
+        </div>
+      </form>
+    </main>
 
     <footer class="footer ">
       <div class="container p-x-md p-y-md">

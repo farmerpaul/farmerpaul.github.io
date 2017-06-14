@@ -5,7 +5,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Standards - Partnership for Dietetic Education and Practice</title>
+    <title>Login - Partnership for Dietetic Education and Practice</title>
     <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:300,300i,400,500,700">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="assets/images/favicons/favicon.ico">
   </head>
 
-  <body class="standards ">
+  <body class="login no-sidebar">
 
     <nav class="navbar navbar-light">
       <div class="container p-x-md">
@@ -79,11 +79,7 @@
 
     <header class="banner">
 
-      <div class="banner-image" style="background-image: url(assets/images/stock-5.jpg);"></div>
-
       <div class="container p-x-md">
-
-        <h2>Tools</h2>
 
       </div>
       <div class="breadcrumb-container">
@@ -91,55 +87,45 @@
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
 
-            <li class="breadcrumb-item"><a href="tools-resources.html">Tools</a></li>
-
-            <li class="breadcrumb-item active">Standards</li>
+            <li class="breadcrumb-item active">Login</li>
           </ol>
         </div>
       </div>
 
     </header>
 
-    <div class="container main-container p-x-md">
-      <div class="row">
-        <aside class="col-xs-3">
-          <div class="sidebar">
-            <h3>Tools</h3>
-            <nav class="nav nav-pills nav-stacked">
+    <main class="container main-container main">
 
-              <a class="nav-link " href="tools-resources.html">Tools &amp; Resources</a>
-
-              <a class="nav-link active" href="standards.html">Standards</a>
-
-            </nav>
+      <form action="member-landing-page.html">
+        <h1>Login</h1>
+        <p>Enter your details below.</p>
+        <div class="form-group">
+          <label for="userId">User ID</label>
+          <input class="form-control" type="text" id="userId" name="userId" placeholder="JaneSmith">
+        </div>
+        <div class="form-group">
+          <div class="form-justified">
+            <label for="password">Password</label>
+            <a href="#" class="small text-muted">Forgot Password?</a>
           </div>
-        </aside>
-        <main class="main col-xs-8 p-l">
-          <h1>Standards</h1>
-
-          <h2>Accreditation Standards + ICDEP</h2>
-          <p>Quick description – lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultrices, mi sed venenatis rhoncus, libero turpis rhoncus nunc.</p>
-          <a class="box" href="#">
-            <h6>Accreditation Standards</h6>
-            <p>Short text description</p>
-          </a>
-          <a class="box" href="#">
-            <h6>Integrated Competencies (ICDEP)</h6>
-            <p>Short text description</p>
-          </a>
-          <h2>Accreditation Handbook</h2>
-          <a class="box" href="#">
-            <h6>Program Accreditation Handbook</h6>
-            <p>Short text description</p>
-          </a>
-          <a class="box" href="#">
-            <h6>Survey Team Review Handbook</h6>
-            <p>Short text description</p>
-          </a>
-
-        </main>
+          <input class="form-control" type="password" id="password" name="password" placeholder="••••••••">
+        </div>
+        <div class="form-justified">
+          <div class="checkbox">
+            <input type="checkbox" id="rememberMe" name="rememberMe" value="1">
+            <label for="rememberMe">Remember Me</label>
+          </div>
+          <input type="submit" class="btn btn-primary" value="Login">
+        </div>
+      </form>
+      <div class="text-center m-t-md">
+        <small class="text-muted">Not yet a PDEP Member?</small>
+        <a href="member-join.html" class="btn btn-primary-outline m-l">
+      Join Today <span class="ion-ios-arrow-forward"></span>
+    </a>
       </div>
-    </div>
+
+    </main>
 
     <footer class="footer ">
       <div class="container p-x-md p-y-md">
