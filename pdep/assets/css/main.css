@@ -8019,6 +8019,7 @@ abbr[title],
 abbr[data-original-title] {
   border-bottom-width: 0.0625rem;
   border-bottom-style: solid;
+  text-decoration: none;
 }
 
 dt {
