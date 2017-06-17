@@ -7977,7 +7977,8 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  line-height: 1.33;
+  font-weight: bold;
+  line-height: 1.25;
   margin: 1.625rem 0 1.0625rem;
 }
 
@@ -8320,7 +8321,7 @@ textarea {
 
 .checkbox input[type="checkbox"]:checked + label:before {
   color: #fff;
-  content: "\f3fd";
+  content: "\f3ff";
   background: #5bb946;
   border-color: #5bb946;
 }
@@ -8460,7 +8461,7 @@ textarea {
 
 .banner h1, .banner .h1, .banner h2, .banner .h2 {
   margin-top: 7.625rem;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0.125rem 1.5rem rgba(0, 0, 0, 0.4);
 }
 
 .banner h1, .banner .h1 {
@@ -8477,7 +8478,7 @@ textarea {
 
 .banner p {
   font-size: 1.125rem;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.75);
+  text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.6);
 }
 
 .banner .btn {
@@ -8514,6 +8515,10 @@ textarea {
   left: 0;
   top: 0;
   width: 67%;
+}
+
+.home .banner-image:before {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.82), transparent);
 }
 
 .breadcrumb-container {
@@ -8707,6 +8712,10 @@ hr + .profile,
   margin-bottom: 0.5625rem;
 }
 
+.aside a {
+  font-weight: normal;
+}
+
 .box {
   background: #f8f9fa;
   border: 0.0625rem solid #edeeef;
@@ -8770,6 +8779,10 @@ a.box:focus, a.box:hover {
   color: #78828c;
 }
 
+a.box:focus p:after, a.box:hover p:after {
+  color: #3c4650;
+}
+
 .box-inline {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
@@ -8799,6 +8812,10 @@ a.box:focus, a.box:hover {
 .box-container .box {
   margin: .625rem 0;
   padding: 1.125rem;
+}
+
+.box-container a.box:focus p, .box-container a.box:hover p {
+  color: #3c4650;
 }
 
 .box-header {
