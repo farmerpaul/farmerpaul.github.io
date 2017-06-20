@@ -8360,6 +8360,10 @@ textarea {
   color: #e01f26;
 }
 
+.has-error label {
+  color: #e01f26;
+}
+
 .validation-message {
   -webkit-box-align: center;
       -ms-flex-align: center;
