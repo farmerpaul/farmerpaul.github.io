@@ -1,0 +1,342 @@
+
+
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie ie9" lang="en"> <![endif]-->
+<!--[if IE 10]>    <html class="no-js ie ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+
+        <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+             More info: h5bp.com/b/378 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+        <title>Nutri-eStep</title>
+
+        <meta name="description" content="" />
+
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        <!-- CSS: implied media=all -->
+        <link rel="stylesheet" href="Styles/flick/jquery-ui-1.9.2.custom.css" />
+        <link rel="stylesheet" href="Styles/style.css" />
+        <link rel="stylesheet" href="/css/responsive-estep.css" />
+        <!-- end CSS-->
+
+        <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+        <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+             Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+             For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+        <script src="Scripts/vendor/modernizr-2.6.1-respond-1.1.0.min.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+        function toggle(divId)
+        {
+            if (document.getElementById(divId).style.display == "none")
+            {
+                document.getElementById(divId).style.display = "block";
+            }
+            else
+            {
+                document.getElementById(divId).style.display = "none";
+            }
+        }
+
+        function toggleArticle(divId)
+        {
+            if (document.getElementById(divId).style.display == "none")
+            {
+                document.getElementById(divId).style.display = "block";
+            }
+            else
+            {
+                document.getElementById(divId).style.display = "none";
+            }
+        }
+    </script>
+
+    </head>
+    <body>
+        <form method="post" action="./survey_summary.aspx?id=13256&amp;s=3e0d7166-aa70-4db0-9d98-5f23c8700489" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTIwMTE1NTc5MzcPFgQeAmlkAshnHgFzBSQzZTBkNzE2Ni1hYTcwLTRkYjAtOWQ5OC01ZjIzYzg3MDA0ODkWAmYPZBYCAgEPZBYCZg9kFiICDw8PFgIeBFRleHQFIVlvdSBzYWlkOiBNb3JlIHRoYW4gNSB0aW1lcyBhIGRheWRkAhUPDxYCHwIFIVlvdSBzYWlkOiBNb3JlIHRoYW4gMyB0aW1lcyBhIGRheWRkAhsPDxYCHwIFIVlvdSBzYWlkOiBNb3JlIHRoYW4gNCB0aW1lcyBhIGRheWRkAiEPDxYCHwIFIVlvdSBzYWlkOiBNb3JlIHRoYW4gMiB0aW1lcyBhIGRheWRkAicPDxYCHwIFH1lvdSBzYWlkOiAzIG9yIG1vcmUgZGF5cyBhIHdlZWtkZAItDw8WAh8CBSFZb3Ugc2FpZDogTW9yZSB0aGFuIDQgdGltZXMgYSBkYXlkZAIzDw8WAh8CBRpZb3Ugc2FpZDogTW9zdCBvZiB0aGUgdGltZWRkAjkPDxYCHwIFGllvdSBzYWlkOiBNb3N0IG9mIHRoZSB0aW1lZGQCPw8PFgIfAgUQWW91IHNhaWQ6IEFsd2F5c2RkAkUPDxYCHwIFEFlvdSBzYWlkOiBBbHdheXNkZAJLDw8WAh8CBRBZb3Ugc2FpZDogQWx3YXlzZGQCUQ8PFgIfAgUhWW91IHNhaWQ6IExlc3MgdGhhbiAyIHRpbWVzIGEgZGF5ZGQCVw8PFgIfAgUQWW91IHNhaWQ6IEFsd2F5c2RkAl0PDxYCHwIFEFlvdSBzYWlkOiBBbHdheXNkZAJjDw8WAh8CBR9Zb3Ugc2FpZDogNCBvciBtb3JlIGhvdXJzIGEgZGF5ZGQCaQ8PFgIfAgUNWW91IHNhaWQ6IFllc2RkAm8PDxYCHwIFG1lvdSBzYWlkOiBTaG91bGQgd2VpZ2ggbW9yZWRkZCzD43tM3BUWba/xkSJ1ceNEaTXskoTdVlokCUys6ZWq" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="67499450" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdABSwJ52lIg+ZkcUd6kX8MLojHz3dxj0yF5W//qHAiy6m4fKH97pON+wtESTn1Vmknf+GDt+PbKgMQ58sLHTDUpRnY3a/jdv/StZZE+SSApEbzlAwNSWbjh722outmyTu+6Ev8QJf+GtNw/Gr6OGjwWs7k525pokwc3dcKS8g9K909vHEVPCkROnUUGniB6PbiVq45qrKuI/Yqte4LVM7S2wMxNhVbv9odWvWA1mopdjWn6aNLbslrEc6+h6ai8GZrSuFb9kGuN03s+DGf/C/mNDi8fsWF0N6mVUT2AEP609YDz1rM+xCXOBA4rV1J4L4eXFXZwsOqdMRGQJc1bOlcjl5P+BRa5nFc+F2GGbDLsNWKujCAhUUODu8XtDBroCsu5Ez4Zc5jOfyjAU1HT7nn4VD+6bqFL5zhQtq7wCv56+UsFEowsQZXKjywdpiRIxLV5rmSRJSGXPDyETBR5SCJGsA" />
+        <div class="container">
+            <div class="header clearfix">
+                <div class="header_title">
+                    <a href="default.aspx"><img src="img/eStep_logo.png" alt="Nutri-eScreen" /></a>
+                </div>
+            </div>
+
+
+    <div class="main results_page info_page your_survey" role="main">
+        <div class="progress_container">
+            <div class="progress_bar step2">
+                <ul class="progress_steps">
+                    <li><strong>Step 1</strong> Your Information</li>
+                    <li class="progress_step2 active"><strong>Step 2</strong> Your Survey</li>
+                    <li class="progress_step3"><strong>Step 3</strong> Your Results</li>
+                    <li class="progress_step4"><strong>Step 4</strong> Your Resources</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content clearfix">
+            <div class="survey_wide_top"></div>
+            <div class="survey_wide">
+                <h2 class="results_header">Healthy Toddler Survey: <span class="subtitle">Your Survey</span></h2>
+                <p>This is a summary of your answers. You can check your answers to the 17 NutriSTEP® questions. You may review and change your answers if you wish. To go on to Your Results, click the Next button</p>
+            </div>
+            <div class="survey_wide_bottom"></div>
+            <div class="results_container">
+                <dl class="results_list">
+                    <dt id="cphBody_divQ1" class="div_open_close" onclick="javascript:toggle(&#39;divQ1Text&#39;)" style="cursor:pointer;">
+                        <div class="question_left"><span>Question #1</span> My child usually eats grain products:</div>
+                        <div class="open_close_results"><a href="#">Open Answer</a></div>
+                    </dt>
+                    <dd style="display: none;" id="divQ1Text">
+                        <div class="results_answer_container clearfix">
+                            <div class="answer"><span id="cphBody_lblQ01">You said: More than 5 times a day</span></div>
+                            <div class="button_medium"><input type="submit" name="ctl00$cphBody$btnQ01" value="Change Answer" id="cphBody_btnQ01" /></div>
+                            <div class="right"><img src="img/survey/01.png"></div>
+                        </div>
+                    </dd>
+                    <dt id="cphBody_divQ2" class="div_open_close" onclick="javascript:toggle(&#39;divQ2Text&#39;)" style="cursor:pointer;">
+                        <div class="question_left"><span>Question #2</span> My child usually has milk products:</div>
+                        <div class="open_close_results"><a href="#">Open Answer</a></div>
+                    </dt>
+                    <dd style="display: none;" id="divQ2Text">
+                        <div class="results_answer_container clearfix">
+                            <div class="answer"><span id="cphBody_lblQ02">You said: More than 3 times a day</span></div>
+                            <div class="button_medium"><input type="submit" name="ctl00$cphBody$btnQ02" value="Change Answer" id="cphBody_btnQ02" /></div>
+                            <div class="right"><img src="img/survey/02.png"></div>
+                        </div>
+                    </dd>
+                    <dt id="cphBody_divQ3" class="div_open_close" onclick="javascript:toggle(&#39;divQ3Text&#39;)" style="cursor:pointer;">
+                        <div class="question_left"><span>Question #3</span> My child usually eats vegetables and fruit:</div>
+                        <div class="open_close_results"><a href="#">Open Answer</a></div>
+                    </dt>
+                    <dd style="display: none;" id="divQ3Text">
+                        <div class="results_answer_container clearfix">
+                            <div class="answer"><span id="cphBody_lblQ03">You said: More than 4 times a day</span></div>
+                            <div class="button_medium"><input type="submit" name="ctl00$cphBody$btnQ03" value="Change Answer" id="cphBody_btnQ03" /></div>
+                            <div class="right"><img src="img/survey/03.png"></div>
+                        </div>
+                    </dd>
+                    <dt id="cphBody_divQ4" class="div_open_close" onclick="javascript:toggle(&#39;divQ4Text&#39;)" style="cursor:pointer;">
+                        <div class="question_left"><span>Question #4</span> My child usually eats meat, fish, poultry or alternatives:</div>
+                        <div class="open_close_results"><a href="#">Open Answer</a></div>
+                    </dt>
+                    <dd style="display: none;" id="divQ4Text">
+                        <div class="results_answer_container clearfix">
+                            <div class="answer"><span id="cphBody_lblQ04">You said: More than 2 times a day</span></div>
+                            <div class="button_medium"><input type="submit" name="ctl00$cphBody$btnQ04" value="Change Answer" id="cphBody_btnQ04" /></div>
+                            <div class="right"><img src="img/survey/04.png"></div>
+                        </div>
+                    </dd>
+                    <dt id="cphBody_divQ5" class="div_open_close" onclick="javascript:toggle(&#39;divQ5Text&#39;)" style="cursor:pointer;">
+                        <div class="question_left"><span>Question #5</span> My child usually eats restaurant or take-out “fast foods”:</div>
+                        <div class="open_close_results"><a href="#">Open Answer</a></div>
+                    </dt>
+                    <dd style="display: none;" id="divQ5Text">
+                        <div class="results_answer_container clearfix">
+                            <div class="answer"><span id="cphBody_lblQ05">You said: 3 or more days a week</span></div>
+                            <div class="button_medium"><input type="submit" name="ctl00$cphBody$btnQ05" value="Change Answer" id="cphBody_btnQ05" /></div>
+                            <div class="right"><img src="img/survey/05.png"></div>
+                        </div>
+                    </dd>
+                    <dt id="cphBody_divQ6" class="div_open_close" onclick="javascript:toggle(&#39;divQ6Text&#39;)" style="cursor:pointer;">
+                        <div class="question_left"><span>Question #6</span> My child usually drinks juice or flavoured beverages:</div>
+                        <div class="open_close_results"><a href="#">Open Answer</a></div>
+                    </dt>
+                    <dd style="display: none;" id="divQ6Text">
+                        <div class="results_answer_container clearfix">
+                            <div class="answer"><span id="cphBody_lblQ06">You said: More than 4 times a day</span></div>
+                            <div class="button_medium"><input type="submit" name="ctl00$cphBody$btnQ06" value="Change Answer" id="cphBody_btnQ06" /></div>
+                            <div class="right"><img src="img/survey/06.png"></div>
+                        </div>
+                    </dd>
+                    <dt id="cphBody_divQ7" class="div_open_close" onclick="javascript:toggle(&#39;divQ7Text&#39;)" style="cursor:pointer;">
+                        <div class="question_left"><span>Question #7</span> I have difficulty buying food I want to feed my child because food is expensive:</div>
+                        <div class="open_close_results"><a href="#">Open Answer</a></div>
+                    </dt>
+                    <dd style="display: none;" id="divQ7Text">
+                        <div class="results_answer_container clearfix">
+                            <div class="answer"><span id="cphBody_lblQ07">You said: Most of the time</span></div>
+                            <div class="button_medium"><input type="submit" name="ctl00$cphBody$btnQ07" value="Change Answer" id="cphBody_btnQ07" /></div>
+                            <div class="right"><img src="img/survey/07.png"></div>
+                        </div>
+                    </dd>
+                    <dt id="cphBody_divQ8" class="div_open_close" onclick="javascript:toggle(&#39;divQ8Text&#39;)" style="cursor:pointer;">
+                        <div class="question_left"><span>Question #8</span> My child has problems chewing, swallowing, gagging or choking when eating:</div>
+                        <div class="open_close_results"><a href="#">Open Answer</a></div>
+                    </dt>
+                    <dd style="display: none;" id="divQ8Text">
+                        <div class="results_answer_container clearfix">
+                            <div class="answer"><span id="cphBody_lblQ08">You said: Most of the time</span></div>
+                            <div class="button_medium"><input type="submit" name="ctl00$cphBody$btnQ08" value="Change Answer" id="cphBody_btnQ08" /></div>
+                            <div class="right"><img src="img/survey/08.png"></div>
+                        </div>
+                    </dd>
+                    <dt id="cphBody_divQ9" class="div_open_close" onclick="javascript:toggle(&#39;divQ9Text&#39;)" style="cursor:pointer;">
+                        <div class="question_left"><span>Question #9</span> My child feeds his/her self at meals and snacks:</div>
+                        <div class="open_close_results"><a href="#">Open Answer</a></div>
+                    </dt>
+                    <dd style="display: none;" id="divQ9Text">
+                        <div class="results_answer_container clearfix">
+                            <div class="answer"><span id="cphBody_lblQ09">You said: Always</span></div>
+                            <div class="button_medium"><input type="submit" name="ctl00$cphBody$btnQ09" value="Change Answer" id="cphBody_btnQ09" /></div>
+                            <div class="right"><img src="img/survey/09.png"></div>
+                        </div>
+                    </dd>
+                    <dt id="cphBody_divQ10" class="div_open_close" onclick="javascript:toggle(&#39;divQ10Text&#39;)" style="cursor:pointer;">
+                        <div class="question_left"><span>Question #10</span> My child drinks from a baby bottle with a nipple:</div>
+                        <div class="open_close_results"><a href="#">Open Answer</a></div>
+                    </dt>
+                    <dd style="display: none;" id="divQ10Text">
+                        <div class="results_answer_container clearfix">
+                            <div class="answer"><span id="cphBody_lblQ10">You said: Always</span></div>
+                            <div class="button_medium"><input type="submit" name="ctl00$cphBody$btnQ10" value="Change Answer" id="cphBody_btnQ10" /></div>
+                            <div class="right"><img src="img/survey/10.png"></div>
+                        </div>
+                    </dd>
+                    <dt id="cphBody_divQ11" class="div_open_close" onclick="javascript:toggle(&#39;divQ11Text&#39;)" style="cursor:pointer;">
+                        <div class="question_left"><span>Question #11</span> My child is hungry at mealtimes:</div>
+                        <div class="open_close_results"><a href="#">Open Answer</a></div>
+                    </dt>
+                    <dd style="display: none;" id="divQ11Text">
+                        <div class="results_answer_container clearfix">
+                            <div class="answer"><span id="cphBody_lblQ11">You said: Always</span></div>
+                            <div class="button_medium"><input type="submit" name="ctl00$cphBody$btnQ11" value="Change Answer" id="cphBody_btnQ11" /></div>
+                            <div class="right"><img src="img/survey/11.png"></div>
+                        </div>
+                    </dd>
+                    <dt id="cphBody_divQ12" class="div_open_close" onclick="javascript:toggle(&#39;divQ12Text&#39;)" style="cursor:pointer;">
+                        <div class="question_left"><span>Question #12</span> My child usually eats meals and snacks:</div>
+                        <div class="open_close_results"><a href="#">Open Answer</a></div>
+                    </dt>
+                    <dd style="display: none;" id="divQ12Text">
+                        <div class="results_answer_container clearfix">
+                            <div class="answer"><span id="cphBody_lblQ12">You said: Less than 2 times a day</span></div>
+                            <div class="button_medium"><input type="submit" name="ctl00$cphBody$btnQ12" value="Change Answer" id="cphBody_btnQ12" /></div>
+                            <div class="right"><img src="img/survey/12.png"></div>
+                        </div>
+                    </dd>
+                    <dt id="cphBody_divQ13" class="div_open_close" onclick="javascript:toggle(&#39;divQ13Text&#39;)" style="cursor:pointer;">
+                        <div class="question_left"><span>Question #13</span> I let my child decide how much to eat:</div>
+                        <div class="open_close_results"><a href="#">Open Answer</a></div>
+                    </dt>
+                    <dd style="display: none;" id="divQ13Text">
+                        <div class="results_answer_container clearfix">
+                            <div class="answer"><span id="cphBody_lblQ13">You said: Always</span></div>
+                            <div class="button_medium"><input type="submit" name="ctl00$cphBody$btnQ13" value="Change Answer" id="cphBody_btnQ13" /></div>
+                            <div class="right"><img src="img/survey/13.png"></div>
+                        </div>
+                    </dd>
+                    <dt id="cphBody_divQ14" class="div_open_close" onclick="javascript:toggle(&#39;divQ14Text&#39;)" style="cursor:pointer;">
+                        <div class="question_left"><span>Question #14</span> My child eats meals or snacks while watching TV, or being read to, or playing with toys:</div>
+                        <div class="open_close_results"><a href="#">Open Answer</a></div>
+                    </dt>
+                    <dd style="display: none;" id="divQ14Text">
+                        <div class="results_answer_container clearfix">
+                            <div class="answer"><span id="cphBody_lblQ14">You said: Always</span></div>
+                            <div class="button_medium"><input type="submit" name="ctl00$cphBody$btnQ14" value="Change Answer" id="cphBody_btnQ14" /></div>
+                            <div class="right"><img src="img/survey/14.png"></div>
+                        </div>
+                    </dd>
+                    <dt id="cphBody_divQ15" class="div_open_close" onclick="javascript:toggle(&#39;divQ15Text&#39;)" style="cursor:pointer;">
+                        <div class="question_left"><span>Question #15</span> My child usually watches TV, or uses the computer, or plays video games:</div>
+                        <div class="open_close_results"><a href="#">Open Answer</a></div>
+                    </dt>
+                    <dd style="display: none;" id="divQ15Text">
+                        <div class="results_answer_container clearfix">
+                            <div class="answer"><span id="cphBody_lblQ15">You said: 4 or more hours a day</span></div>
+                            <div class="button_medium"><input type="submit" name="ctl00$cphBody$btnQ15" value="Change Answer" id="cphBody_btnQ15" /></div>
+                            <div class="right"><img src="img/survey/15.png"></div>
+                        </div>
+                    </dd>
+                    <dt id="cphBody_divQ16" class="div_open_close" onclick="javascript:toggle(&#39;divQ16Text&#39;)" style="cursor:pointer;">
+                        <div class="question_left"><span>Question #16</span> I am comfortable with how my child is growing:</div>
+                        <div class="open_close_results"><a href="#">Open Answer</a></div>
+                    </dt>
+                    <dd style="display: none;" id="divQ16Text">
+                        <div class="results_answer_container clearfix">
+                            <div class="answer"><span id="cphBody_lblQ16">You said: Yes</span></div>
+                            <div class="button_medium"><input type="submit" name="ctl00$cphBody$btnQ16" value="Change Answer" id="cphBody_btnQ16" /></div>
+                            <div class="right"><img src="img/survey/16.png"></div>
+                        </div>
+                    </dd>
+                    <dt id="cphBody_divQ17" class="div_open_close" onclick="javascript:toggle(&#39;divQ17Text&#39;)" style="cursor:pointer;">
+                        <div class="question_left"><span>Question #17</span> My child's weight:</div>
+                        <div class="open_close_results"><a href="#">Open Answer</a></div>
+                    </dt>
+                    <dd style="display: none;" id="divQ17Text">
+                        <div class="results_answer_container clearfix">
+                            <div class="answer"><span id="cphBody_lblQ17">You said: Should weigh more</span></div>
+                            <div class="button_medium"><input type="submit" name="ctl00$cphBody$btnQ17" value="Change Answer" id="cphBody_btnQ17" /></div>
+                            <div class="right"><img src="img/survey/17.png"></div>
+                        </div>
+                    </dd>
+                </dl>
+                <div class="results_end_buttons clearfix">
+                    <div class="back_button button"><input type="submit" name="ctl00$cphBody$btnBack" value="Go Back" id="cphBody_btnBack" /></div>
+                    <div class="next_button button"><input type="submit" name="ctl00$cphBody$btnNext" value="Next" id="cphBody_btnNext" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+            <div class="footer clearfix">
+                Copyright &copy; 2017&nbsp;Dietitians of Canada. All rights reserved.&nbsp; | &nbsp;
+                <a href="default.aspx">Home</a>&nbsp; | &nbsp;
+                <a href="background_and_acknowledgment.aspx" target="_blank">Background &amp; Acknowledgement</a>&nbsp; | &nbsp;
+                <a href="http://www.dietitians.ca/About-Us/Terms-of-Use.aspx" target="_blank">Terms of Use</a>&nbsp; | &nbsp;
+                <a href="http://www.dietitians.ca/About-Us/Privacy-Policy.aspx" target="_blank">Privacy Policy</a>&nbsp; | &nbsp;
+
+                <a href="/toddler/survey_summary.aspx?lang=fr&id=13256&s=3e0d7166-aa70-4db0-9d98-5f23c8700489">Français</a>
+                <a href="http://www.dietitians.ca" target="_blank"><img src="img/dc_logo.png" alt="Dietitians of Canada" /></a>
+            </div>
+        </div> <!--! end of #container -->
+        </form>
+
+        <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript">window.jQuery || document.write('<script src="Scripts/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+
+        <!-- scripts -->
+        <script src="Scripts/vendor/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
+        <script src="Scripts/main.js" type="text/javascript"></script>
+        <script src="Scripts/plugins.js" defer="defer"></script>
+        <script src="Scripts/scripts.js" defer="defer"></script>
+        <!-- end scripts -->
+
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-17027102-20']);
+            _gaq.push(['_setDomainName', 'nutritionscreen.ca']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+
+
+    </body>
+</html>

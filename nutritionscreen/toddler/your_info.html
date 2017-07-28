@@ -1,0 +1,275 @@
+
+
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie ie9" lang="en"> <![endif]-->
+<!--[if IE 10]>    <html class="no-js ie ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+
+        <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+             More info: h5bp.com/b/378 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+        <title>Nutri-eStep</title>
+
+        <meta name="description" content="" />
+
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        <!-- CSS: implied media=all -->
+        <link rel="stylesheet" href="Styles/flick/jquery-ui-1.9.2.custom.css" />
+        <link rel="stylesheet" href="Styles/style.css" />
+        <link rel="stylesheet" href="/css/responsive-estep.css" />
+        <!-- end CSS-->
+
+        <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+        <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+             Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+             For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+        <script src="Scripts/vendor/modernizr-2.6.1-respond-1.1.0.min.js" type="text/javascript"></script>
+
+
+
+
+
+    </head>
+    <body>
+        <form method="post" action="./your_info.aspx" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNzgxODE4NDEzDxYCHgJpZGYWAmYPZBYCZg9kFgICAQ9kFgJmD2QWAgIDDxYCHgVjbGFzcwUUbWFpbiBwYWdlMSBpbmZvX3BhZ2UWBAIBDxYCHwEFEnByb2dyZXNzX2JhciBzdGVwMRYCAgEPFgIfAQUGYWN0aXZlZAIDD2QWCgIGDxYCHgRUZXh0BZMBSWYgeW91ciBjaGlsZCBpcyAzLTUgeWVhcnMsIHVzZSB0aGUgPGEgY2xhc3M9ImxpbmsiIGhyZWY9Imh0dHA6Ly93d3cubnV0cml0aW9uc2NyZWVuLmNhL3ByZXNjaG9vbGVyL2RlZmF1bHQuYXNweCI+TnV0cmktZVNURVAgUHJlc2Nob29sZXIgc2l0ZTwvYT4uZAIODxAPZBYCHghvbmNoYW5nZQUOY2hhbmdlT3B0aW9uKCkQFQYGQ2FuYWRhDVVuaXRlZCBTdGF0ZXMOVW5pdGVkIEtpbmdkb20JQXVzdHJhbGlhC05ldyBaZWFsYW5kBU90aGVyFQYGQ2FuYWRhDVVuaXRlZCBTdGF0ZXMOVW5pdGVkIEtpbmdkb20JQXVzdHJhbGlhC05ldyBaZWFsYW5kBU90aGVyFCsDBmdnZ2dnZ2RkAg8PFgIeBXN0eWxlBQhkaXNwbGF5OhYCAgMPEGQQFQ0HQWxiZXJ0YRBCcml0aXNoIENvbHVtYmlhCE1hbml0b2JhDU5ldyBCcnVuc3dpY2sZTmV3Zm91bmRsYW5kIGFuZCBMYWJyYWRvchVOb3J0aHdlc3QgVGVycml0b3JpZXMLTm92YSBTY290aWEHTnVuYXZ1dAdPbnRhcmlvFFByaW5jZSBFZHdhcmQgSXNsYW5kBlF1ZWJlYwxTYXNrYXRjaGV3YW4FWXVrb24VDQJBQgJCQwJNQgJOQgJOTAJOVAJOUwJOVQJPTgJQRQJRQwJTSwJZSxQrAw1nZ2dnZ2dnZ2dnZ2dnZGQCEA8WAh8EBQxkaXNwbGF5Om5vbmVkAhEPFgIfBAUIZGlzcGxheTpkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYLBSdjdGwwMCRjdGwwMCRjcGhCb2R5JGNwaFF1ZXN0aW9uJGNiQWdyZWUFJmN0bDAwJGN0bDAwJGNwaEJvZHkkY3BoUXVlc3Rpb24kcmJBZ2UxBSZjdGwwMCRjdGwwMCRjcGhCb2R5JGNwaFF1ZXN0aW9uJHJiQWdlMQUmY3RsMDAkY3RsMDAkY3BoQm9keSRjcGhRdWVzdGlvbiRyYkFnZTIFJmN0bDAwJGN0bDAwJGNwaEJvZHkkY3BoUXVlc3Rpb24kcmJBZ2UyBSZjdGwwMCRjdGwwMCRjcGhCb2R5JGNwaFF1ZXN0aW9uJHJiQWdlMwUmY3RsMDAkY3RsMDAkY3BoQm9keSRjcGhRdWVzdGlvbiRyYkFnZTMFJmN0bDAwJGN0bDAwJGNwaEJvZHkkY3BoUXVlc3Rpb24kcmJNYWxlBSZjdGwwMCRjdGwwMCRjcGhCb2R5JGNwaFF1ZXN0aW9uJHJiTWFsZQUoY3RsMDAkY3RsMDAkY3BoQm9keSRjcGhRdWVzdGlvbiRyYkZlbWFsZQUoY3RsMDAkY3RsMDAkY3BoQm9keSRjcGhRdWVzdGlvbiRyYkZlbWFsZVRaE+5vEf+85nlYeAU4iRRLrxuHcjwlJPuBSkunhpge" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B8070E10" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAB/sbI2gBrFwqnTz+u0XaIjcE3QmM5loJ5+3L1psmnZRLzA/H7gcg9nT2c35e9Rss4o9rFkgrNYByUQMdOYDPd9rJZsZQb/dYZDVxR3c7DbhJUhmVRqUmcLfHrd+KMRph3JpaFAwfQcTqIDPA9G/zthW/7jdvw5FutmOp2UQbwxiysXYPOc3nc6krVpuMVufA2CJtJvDq/qE6Hh7DFqwiiEH9rBJXdOOhDd5ZVkJkdyDiUCfrptfYDZ0/5AHseKkgNmAdayls+ONNfGftpHHpofLLE8/unu5jRje11h2Hm4iURZ5hIj+LNl1GyJHJ/+LHJP/DHwHyIkp9AkSWAAGg6Owi3WZzWjBFcV6flUvzjU8YSWbXc29APBrvDHAMwFw/Ukt1utPQAkgwvdjS72z2NVmTsthT3/kKVQkiBwM2BSMg/Ii/TnadaKm8U6PrC1ZfzHMB3NGm9oVFbsfKfF3RgdjUMryeJMiwoEosa/owrTDbQY2UeuZwQxuSy8agFJgE3dJIqouWmHLhZEOA/uDHDNNFiF/oagoJ74SqgFKEe9tYO/3it674BpF7pIo5aNW69oU+qLOe991kq/1vjDezIam+fLWvKXZg+zzR2+OiYDZarPFkOtc5zLMkb4HVDfDbTGWXE0RW8Hhd0XdwnWufOcK079HuRf6LEZqUu5WpCUkiGCZDMZkg+dcJGlHEaPcsas=" />
+        <div class="container">
+            <div class="header clearfix">
+                <div class="header_title">
+                    <a href="default.aspx"><img src="img/eStep_logo.png" alt="Nutri-eScreen" /></a>
+                </div>
+            </div>
+
+
+    <input type="hidden" name="ctl00$ctl00$cphBody$hfViewed" id="cphBody_hfViewed" value="0" />
+    <div id="cphBody_divMain" class="main page1 info_page" role="main">
+        <div class="progress_container">
+            <div id="cphBody_divProgressBar" class="progress_bar step1">
+                <ul class="progress_steps">
+                    <li id="cphBody_liStep1" class="active"><strong>Step 1</strong> Your Information</li>
+                    <li id="cphBody_liStep2" class="progress_step2"><strong>Step 2</strong> Your Survey</li>
+                    <li class="progress_step3"><strong>Step 3</strong> Your Results</li>
+                    <li class="progress_step4"><strong>Step 4</strong> Your Resources</li>
+                </ul>
+            </div>
+        </div>
+
+    <div class="content clearfix">
+        <div class="left_column">
+            <h3>Getting Started</h3>
+            <p>Tell us a little bit of information about your child.</p>
+            <h3>Your Privacy</h3>
+            <p>We ask your child’s age, gender and postal code to help us know how the site is being used, for research purposes, and to help plan future services and promotions. We do not share the personal information collected. All your answers are kept confidential.</p>
+            <p><input id="cphBody_cphQuestion_cbAgree" type="checkbox" name="ctl00$ctl00$cphBody$cphQuestion$cbAgree" /><label for="cphBody_cphQuestion_cbAgree"> I agree. By continuing with the questionnaire, you consent to us using the collective data submitted by users for the above purposes, but not any personally identifiable information.</label><br /></p>
+        </div>
+        <div class="right_column">
+            <div class="form_top"></div>
+            <div class="form">
+                <div class="survey_questions">
+                    <div class="question">
+                    <span class="question_text">
+                        Nutri-eSTEP is intended to provide feedback for children between the ages of 18 to 35 months. Please select your child’s age range.
+                        If your child is 3-5 years, use the <a class="link" href="http://www.nutritionscreen.ca/preschooler/default.aspx">Nutri-eSTEP Preschooler site</a>.
+                    </span>
+                        <ul class="answer_list">
+                            <li><input id="cphBody_cphQuestion_rbAge1" type="radio" name="ctl00$ctl00$cphBody$cphQuestion$Age" value="rbAge1" /><label for="cphBody_cphQuestion_rbAge1">18 months - 23 months</label></li>
+                            <li><input id="cphBody_cphQuestion_rbAge2" type="radio" name="ctl00$ctl00$cphBody$cphQuestion$Age" value="rbAge2" /><label for="cphBody_cphQuestion_rbAge2">24 months - 29 months</label></li>
+                            <li><input id="cphBody_cphQuestion_rbAge3" type="radio" name="ctl00$ctl00$cphBody$cphQuestion$Age" value="rbAge3" /><label for="cphBody_cphQuestion_rbAge3">30 months - 35 months</label></li>
+                        </ul>
+                    </div>
+                    <div class="question">
+                        <span class="question_text">What is your child's gender?</span>
+                        <ul class="answer_list">
+                            <li><input id="cphBody_cphQuestion_rbMale" type="radio" name="ctl00$ctl00$cphBody$cphQuestion$Gender" value="rbMale" /><label for="cphBody_cphQuestion_rbMale">Male</label></li>
+                            <li><input id="cphBody_cphQuestion_rbFemale" type="radio" name="ctl00$ctl00$cphBody$cphQuestion$Gender" value="rbFemale" /><label for="cphBody_cphQuestion_rbFemale">Female</label></li>
+                        </ul>
+                    </div>
+                    <div class="question">
+                        <span class="question_text">Country where your child lives?</span>
+                        <br />
+                        <select name="ctl00$ctl00$cphBody$cphQuestion$ddlCountry" id="cphBody_cphQuestion_ddlCountry" onchange="changeOption()">
+	<option selected="selected" value="Canada">Canada</option>
+	<option value="United States">United States</option>
+	<option value="United Kingdom">United Kingdom</option>
+	<option value="Australia">Australia</option>
+	<option value="New Zealand">New Zealand</option>
+	<option value="Other">Other</option>
+
+</select>
+                    </div>
+                    <div id="cphBody_cphQuestion_divProvince" class="question" style="display:">
+                        <span class="question_text">Province or territory where your child lives?</span>
+                        <br />
+                        <select name="ctl00$ctl00$cphBody$cphQuestion$ddlProvince" id="cphBody_cphQuestion_ddlProvince">
+	<option value="AB">Alberta</option>
+	<option value="BC">British Columbia</option>
+	<option value="MB">Manitoba</option>
+	<option value="NB">New Brunswick</option>
+	<option value="NL">Newfoundland and Labrador</option>
+	<option value="NT">Northwest Territories</option>
+	<option value="NS">Nova Scotia</option>
+	<option value="NU">Nunavut</option>
+	<option value="ON">Ontario</option>
+	<option value="PE">Prince Edward Island</option>
+	<option value="QC">Quebec</option>
+	<option value="SK">Saskatchewan</option>
+	<option value="YK">Yukon</option>
+
+</select>
+                    </div>
+                    <div id="cphBody_cphQuestion_divCountry" class="question" style="display:none">
+                        <span class="question_text">Please Specify</span>
+                        <br />
+                        <input name="ctl00$ctl00$cphBody$cphQuestion$txtCountry" type="text" id="cphBody_cphQuestion_txtCountry" />
+                    </div>
+                    <div id="cphBody_cphQuestion_divPostalCode" class="question" style="display:">
+                        <span class="question_text">What is your child's postal code?</span>
+                        <input name="ctl00$ctl00$cphBody$cphQuestion$txtPostalCode" type="text" id="cphBody_cphQuestion_txtPostalCode" class="text" />
+                    </div>
+                </div>
+                <div class="next_back clearfix">
+                    <div class="back_button button"><input type="submit" name="ctl00$ctl00$cphBody$cphQuestion$btnBack" value="Go Back" id="cphBody_cphQuestion_btnBack" /></div>
+                    <div class="next_button button"><input type="submit" name="ctl00$ctl00$cphBody$cphQuestion$btnNext" value="Next Step" id="cphBody_cphQuestion_btnNext" /></div>
+                </div>
+
+            </div>
+            <div class="form_bottom"></div>
+        </div>
+    </div>
+
+    </div>
+
+
+            <div class="footer clearfix">
+                Copyright &copy; 2017&nbsp;Dietitians of Canada. All rights reserved.&nbsp; | &nbsp;
+                <a href="default.aspx">Home</a>&nbsp; | &nbsp;
+                <a href="background_and_acknowledgment.aspx" target="_blank">Background &amp; Acknowledgement</a>&nbsp; | &nbsp;
+                <a href="http://www.dietitians.ca/About-Us/Terms-of-Use.aspx" target="_blank">Terms of Use</a>&nbsp; | &nbsp;
+                <a href="http://www.dietitians.ca/About-Us/Privacy-Policy.aspx" target="_blank">Privacy Policy</a>&nbsp; | &nbsp;
+
+                <a href="/toddler/your_info.aspx?lang=fr">Français</a>
+                <a href="http://www.dietitians.ca" target="_blank"><img src="img/dc_logo.png" alt="Dietitians of Canada" /></a>
+            </div>
+        </div> <!--! end of #container -->
+        </form>
+
+        <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript">window.jQuery || document.write('<script src="Scripts/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+
+        <!-- scripts -->
+        <script src="Scripts/vendor/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
+        <script src="Scripts/main.js" type="text/javascript"></script>
+        <script src="Scripts/plugins.js" defer="defer"></script>
+        <script src="Scripts/scripts.js" defer="defer"></script>
+        <!-- end scripts -->
+
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-17027102-20']);
+            _gaq.push(['_setDomainName', 'nutritionscreen.ca']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+
+    <script>
+            var _dialog = $("#dialog-help").dialog({
+                autoOpen: false,
+                height: 400,
+                width: 900,
+                modal: true,
+                resizable: false
+            });
+            _dialog.parent().appendTo(jQuery("form:first")); //move the dialog back inside the form
+
+            $("#help-button")
+            .button()
+            .click(function (e) {
+                e.preventDefault();
+                $("#dialog-help").dialog("open");
+            });
+
+            function hideHelp() {
+                $("#dialog-help").dialog('close');
+                $("#cphBody_hfViewed").val('1');
+            }
+    </script>
+
+    <script type="text/javascript">
+        function changeOption() {
+            var _country = document.getElementById('cphBody_cphQuestion_ddlCountry').options[document.getElementById('cphBody_cphQuestion_ddlCountry').options.selectedIndex].value;
+
+            if (_country == 'Canada') {
+                document.getElementById('cphBody_cphQuestion_divProvince').style.display = '';
+                document.getElementById('cphBody_cphQuestion_divPostalCode').style.display = '';
+                document.getElementById('cphBody_cphQuestion_divCountry').style.display = 'none';
+
+                if (document.getElementById('cphBody_cphQuestion_divErrorQB')) {
+                    document.getElementById('cphBody_cphQuestion_divErrorQB').style.display = '';
+                }
+            }
+            else if (_country == 'Other') {
+                document.getElementById('cphBody_cphQuestion_divCountry').style.display = '';
+                document.getElementById('cphBody_cphQuestion_divProvince').style.display = 'none';
+                document.getElementById('cphBody_cphQuestion_divPostalCode').style.display = 'none';
+
+                if (document.getElementById('cphBody_cphQuestion_divErrorQB')) {
+                    document.getElementById('cphBody_cphQuestion_divErrorQB').style.display = '';
+                }
+            }
+            else {
+                document.getElementById('cphBody_cphQuestion_divProvince').style.display = 'none';
+                document.getElementById('cphBody_cphQuestion_divPostalCode').style.display = 'none';
+                document.getElementById('cphBody_cphQuestion_divCountry').style.display = 'none';
+
+                if (document.getElementById('cphBody_cphQuestion_divErrorQB')) {
+                    document.getElementById('cphBody_cphQuestion_divErrorQB').style.display = 'none';
+                }
+            }
+        }
+
+        var _dialog = $("#modal-postal-info").dialog({
+            autoOpen: false,
+            height: 200,
+            width: 900,
+            modal: true,
+            resizable: false
+        });
+        _dialog.parent().appendTo(jQuery("form:first")); //move the dialog back inside the form
+
+        function showPostalInfo() {
+            $("#modal-postal-info").dialog("open");
+        }
+
+        function hidePostalInfo() {
+            $("#modal-postal-info").dialog('close');
+        }
+    </script>
+
+
+    </body>
+</html>

@@ -1,0 +1,29 @@
+// VARIABLES
+
+$orig-width:        1000px;
+$mobile-breakpoint: $orig-width * .75;
+
+// MIXINS
+
+@mixin mobile() {
+  @media (max-width: $mobile-breakpoint - 1px) {
+    @content;
+  }
+}
+@mixin mobileScaling($element: ".container") {
+  #{$element} {
+    // Scale up mobile layout > 524px.
+    @include mobile {
+      transform: scale(1.25);
+      transform-origin: top center;
+    }
+    // Don't scale within 360px and 524px.
+    @media (max-width: $mobile-breakpoint * .7 - 1px) {
+      transform: none;
+    }
+    // Slightly scale down mobile layout < 360px.
+    @media (max-width: 359px) {
+      transform: scaleX(.9);
+    }
+  }
+}

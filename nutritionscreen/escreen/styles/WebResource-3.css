@@ -1,0 +1,47 @@
+﻿/* RadToolTip Default Skin */
+
+.RadToolTip_Default.rtLoading
+{
+	background: url('../img/WebResource-ih.gif') no-repeat center;
+}
+
+div.RadToolTip_Default table.rtWrapper td.rtWrapperTopLeft,
+div.RadToolTip_Default table.rtWrapper td.rtWrapperTopRight,
+div.RadToolTip_Default table.rtWrapper td.rtWrapperBottomLeft,
+div.RadToolTip_Default table.rtWrapper td.rtWrapperBottomRight
+{
+	background-image: url('../img/WebResource-Bc.gif');
+}
+
+div.RadToolTip_Default table.rtWrapper td.rtWrapperTopCenter,
+div.RadToolTip_Default table.rtWrapper td.rtWrapperBottomCenter
+{
+	background-image: url('../img/WebResource-Bc.gif') ;
+}
+
+div.RadToolTip_Default table.rtWrapper td.rtWrapperLeftMiddle,
+div.RadToolTip_Default table.rtWrapper td.rtWrapperRightMiddle
+{
+	background-image:  url('../img/WebResource-mF.gif');
+}
+
+div.RadToolTip_Default table.rtWrapper td.rtWrapperContent
+{
+	background-color: #fff;
+	color: #666;
+}
+
+div.RadToolTip_Default div.rtTitlebar
+{
+	color: #666;
+}
+
+div.RadToolTip_Default a.rtCloseButton
+{
+	background-image: url('../img/WebResource-Bc.gif');
+}
+
+div.RadToolTip_Default div.rtCallout
+{
+	background-image: url('../img/WebResource-Gc.gif');
+}

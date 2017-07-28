@@ -1,0 +1,37 @@
+@import "responsive-mixins";
+@import "responsive-common";
+
+// PAGE SCALING
+
+@include mobileScaling(".main");
+
+// MOBILE LAYOUT ADJUSTMENTS - HOME PAGE
+
+@include mobile {
+  .main {
+    margin-bottom: 90px;
+    width: 320px;
+  }
+  .section.first .left {
+    padding: 0;
+    width: auto;
+  }
+  p {
+    margin-bottom: .75em;
+  }
+  ul {
+    padding-left: 15px;
+    width: auto;
+  }
+  .divider {
+    background-size: contain;
+    width: 100%;
+    height: 10px;
+  }
+  .section.third .left {
+    margin: 0 30px 40px;
+  }
+  .section.third .left.nutriescreen {
+    margin-bottom: 0;
+  }
+}

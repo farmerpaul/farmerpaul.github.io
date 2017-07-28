@@ -1,0 +1,664 @@
+
+
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie ie9" lang="en"> <![endif]-->
+<!--[if IE 10]>    <html class="no-js ie ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+
+        <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+             More info: h5bp.com/b/378 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+        <title>Nutri-eStep</title>
+
+        <meta name="description" content="" />
+
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        <!-- CSS: implied media=all -->
+        <link rel="stylesheet" href="Styles/flick/jquery-ui-1.9.2.custom.css" />
+        <link rel="stylesheet" href="Styles/style.css" />
+        <link rel="stylesheet" href="/css/responsive-estep.css" />
+        <!-- end CSS-->
+
+        <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+        <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+             Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+             For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+        <script src="Scripts/vendor/modernizr-2.6.1-respond-1.1.0.min.js" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+        function toggle(divId)
+        {
+            if (document.getElementById(divId).style.display == "none")
+            {
+                document.getElementById(divId).style.display = "block";
+            }
+            else
+            {
+                document.getElementById(divId).style.display = "none";
+            }
+        }
+
+        function toggleArticle(divId)
+        {
+            if (document.getElementById(divId).style.display == "none")
+            {
+                document.getElementById(divId).style.display = "block";
+            }
+            else
+            {
+                document.getElementById(divId).style.display = "none";
+            }
+        }
+    </script>
+
+    </head>
+    <body>
+        <form method="post" action="./results_feedback.aspx?id=13252&amp;s=46e2420b-b6f9-40c5-83a0-241e3a151f6c&amp;q=GE" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjEyMzEzMTk0MQ8WBh4CaWQCxGceAXMFJDQ2ZTI0MjBiLWI2ZjktNDBjNS04M2EwLTI0MWUzYTE1MWY2Yx4BcQUCR0UWAmYPZBYEAgEPZBYCZg9kFgICAQ8WAh4FY2xhc3MFKG1haW4gcmVzdWx0c19wYWdlIGluZm9fcGFnZSB5b3VyX3Jlc3VsdHMWLAIRDxYCHgRocmVmBUwuL3Jlc3VsdHNfZmVlZGJhY2suYXNweD9pZD0xMzI1MiZzPTQ2ZTI0MjBiLWI2ZjktNDBjNS04M2EwLTI0MWUzYTE1MWY2YyZxPURXZAITDxYCHwQFTC4vcmVzdWx0c19mZWVkYmFjay5hc3B4P2lkPTEzMjUyJnM9NDZlMjQyMGItYjZmOS00MGM1LTgzYTAtMjQxZTNhMTUxZjZjJnE9UklkAhUPFgIeBFRleHRlZAIXD2QWAgIDD2QWAgIFDxYCHgdvbmNsaWNrBUl0b2dnbGVBcnRpY2xlKCdjcGhCb2R5X3Jlc3VsdHNfZmVlZGJhY2tfUTAxX2RpdkxlYXJuTW9yZScpOyByZXR1cm4gZmFsc2U7ZAIZD2QWAgIDD2QWAgIFDxYCHwYFSXRvZ2dsZUFydGljbGUoJ2NwaEJvZHlfcmVzdWx0c19mZWVkYmFja19RMDJfZGl2TGVhcm5Nb3JlJyk7IHJldHVybiBmYWxzZTtkAhsPZBYCAgMPZBYCAgUPFgIfBgVJdG9nZ2xlQXJ0aWNsZSgnY3BoQm9keV9yZXN1bHRzX2ZlZWRiYWNrX1EwM19kaXZMZWFybk1vcmUnKTsgcmV0dXJuIGZhbHNlO2QCHQ9kFgICAw9kFgICBQ8WAh8GBUl0b2dnbGVBcnRpY2xlKCdjcGhCb2R5X3Jlc3VsdHNfZmVlZGJhY2tfUTA0X2RpdkxlYXJuTW9yZScpOyByZXR1cm4gZmFsc2U7ZAIfD2QWAgIDD2QWAgIFDxYCHwYFSXRvZ2dsZUFydGljbGUoJ2NwaEJvZHlfcmVzdWx0c19mZWVkYmFja19RMDVfZGl2TGVhcm5Nb3JlJyk7IHJldHVybiBmYWxzZTtkAiEPZBYCAgMPZBYCAgUPFgIfBgVJdG9nZ2xlQXJ0aWNsZSgnY3BoQm9keV9yZXN1bHRzX2ZlZWRiYWNrX1EwNl9kaXZMZWFybk1vcmUnKTsgcmV0dXJuIGZhbHNlO2QCIw9kFgICAw9kFgICBQ8WAh8GBUl0b2dnbGVBcnRpY2xlKCdjcGhCb2R5X3Jlc3VsdHNfZmVlZGJhY2tfUTA3X2RpdkxlYXJuTW9yZScpOyByZXR1cm4gZmFsc2U7ZAIlD2QWAgIDD2QWAgIFDxYCHwYFSXRvZ2dsZUFydGljbGUoJ2NwaEJvZHlfcmVzdWx0c19mZWVkYmFja19RMDhfZGl2TGVhcm5Nb3JlJyk7IHJldHVybiBmYWxzZTtkAicPZBYCAgMPZBYCAgUPFgIfBgVJdG9nZ2xlQXJ0aWNsZSgnY3BoQm9keV9yZXN1bHRzX2ZlZWRiYWNrX1EwOV9kaXZMZWFybk1vcmUnKTsgcmV0dXJuIGZhbHNlO2QCKQ9kFgICAw9kFgICBQ8WAh8GBUl0b2dnbGVBcnRpY2xlKCdjcGhCb2R5X3Jlc3VsdHNfZmVlZGJhY2tfUTEwX2RpdkxlYXJuTW9yZScpOyByZXR1cm4gZmFsc2U7ZAIrD2QWAgIDD2QWAgIFDxYCHwYFSXRvZ2dsZUFydGljbGUoJ2NwaEJvZHlfcmVzdWx0c19mZWVkYmFja19RMTFfZGl2TGVhcm5Nb3JlJyk7IHJldHVybiBmYWxzZTtkAi0PZBYCAgMPZBYCAgUPFgIfBgVJdG9nZ2xlQXJ0aWNsZSgnY3BoQm9keV9yZXN1bHRzX2ZlZWRiYWNrX1ExMl9kaXZMZWFybk1vcmUnKTsgcmV0dXJuIGZhbHNlO2QCLw9kFgICAw9kFgICBQ8WAh8GBUl0b2dnbGVBcnRpY2xlKCdjcGhCb2R5X3Jlc3VsdHNfZmVlZGJhY2tfUTEzX2RpdkxlYXJuTW9yZScpOyByZXR1cm4gZmFsc2U7ZAIxD2QWAgIDD2QWAgIFDxYCHwYFSXRvZ2dsZUFydGljbGUoJ2NwaEJvZHlfcmVzdWx0c19mZWVkYmFja19RMTRfZGl2TGVhcm5Nb3JlJyk7IHJldHVybiBmYWxzZTtkAjMPZBYCAgMPZBYCAgUPFgIfBgVJdG9nZ2xlQXJ0aWNsZSgnY3BoQm9keV9yZXN1bHRzX2ZlZWRiYWNrX1ExNV9kaXZMZWFybk1vcmUnKTsgcmV0dXJuIGZhbHNlO2QCNQ9kFgICAw9kFgICBQ8WAh8GBUl0b2dnbGVBcnRpY2xlKCdjcGhCb2R5X3Jlc3VsdHNfZmVlZGJhY2tfUTE2X2RpdkxlYXJuTW9yZScpOyByZXR1cm4gZmFsc2U7ZAI3D2QWAgIDD2QWAgIFDxYCHwYFSXRvZ2dsZUFydGljbGUoJ2NwaEJvZHlfcmVzdWx0c19mZWVkYmFja19RMTdfZGl2TGVhcm5Nb3JlJyk7IHJldHVybiBmYWxzZTtkAjsPFgIfBAVNLi9yZXN1bHRzX2ZlZWRiYWNrX3ByaW50LmFzcHg/aWQ9MTMyNTImcz00NmUyNDIwYi1iNmY5LTQwYzUtODNhMC0yNDFlM2ExNTFmNmNkAj0PFgIfBAVRLi9yZXN1bHRzX2ZlZWRiYWNrX3Jlc291cmNlcy5hc3B4P2lkPTEzMjUyJnM9NDZlMjQyMGItYjZmOS00MGM1LTgzYTAtMjQxZTNhMTUxZjZjZAICD2QWAgIBDw8WAh4SZHluYW1pY19jb250ZW50X2lkZmRkZFMiRX9+v+SL9/zS9GMgOm4BioJFL4Xv16XyP+DO62zQ" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6B21C8FE" />
+        <div class="container">
+            <div class="header clearfix">
+                <div class="header_title">
+                    <a href="default.aspx"><img src="img/eStep_logo.png" alt="Nutri-eScreen" /></a>
+                </div>
+            </div>
+
+
+    <div id="cphBody_divMain" role="main" class="main results_page info_page your_results">
+        <div class="progress_container">
+            <div class="progress_bar step3">
+                <ul class="progress_steps">
+                    <li><strong>Step 1</strong> Your Information</li>
+                    <li class="progress_step2"><strong>Step 2</strong> Your Survey</li>
+                    <li class="progress_step3 active"><strong>Step 3</strong> Your Results</li>
+                    <li class="progress_step4"><strong>Step 4</strong> Your Resources</li>
+                </ul>
+            </div>
+        </div>
+        <div id="glossary_search" class="content clearfix">
+            <div class="survey_wide_top"></div>
+            <div class="survey_wide">
+                <h2 class="results_header">Healthy Toddler Survey: <span class="subtitle">Your Results</span></h2>
+                <p>You have completed the Healthy Toddler survey. You can now look at your Nutri-eSTEP Results. Click on the brown bar on the left-hand side to see What Is Going Well; OR click on the green bar on the right-hand side to see What To Work On.</p>
+                <p>You will be able to read the Feedback for each question in the section you choose. <br>
+                Click on Learn More to read more details on your Feedback.<br />At any time, you can also choose to move to the other section by clicking on the green or brown bar.</p>
+                <p>Once you have finished reviewing Your Results, you can use the buttons at the bottom to Print or Email yourself a copy of Your Results OR go on to the Resources section to find helpful links to articles, videos, interactive tools and recipes.</p>
+                <div class="results_buttons">
+                    <div class="green_button"><a href="./results_feedback.aspx?id=13252&s=46e2420b-b6f9-40c5-83a0-241e3a151f6c&q=DW" id="cphBody_aGoingWell">What Is Going Well</a></div>
+                    <div class="brown_button"><a href="./results_feedback.aspx?id=13252&s=46e2420b-b6f9-40c5-83a0-241e3a151f6c&q=RI" id="cphBody_aWorkOn">What To Work On</a></div>
+                </div>
+                <div class="clearfix">&nbsp;</div>
+            </div>
+            <div class="survey_wide_bottom"></div>
+            <div class="results_container">
+                <p class="info"></p>
+                <dl class="results_list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </dl>
+                <p class="note"><strong>Please note: once you leave the Nutri-eSTEP site your results will be lost. Be sure to print or email your results to yourself before you look at Resources.</strong></p>
+                <div class="results_end_buttons clearfix">
+                    <div class="print_button button"><a href="./results_feedback_print.aspx?id=13252&s=46e2420b-b6f9-40c5-83a0-241e3a151f6c" id="cphBody_aPrint">Print</a></div>
+                    <div class="basic_button button"><a href="./results_feedback_resources.aspx?id=13252&s=46e2420b-b6f9-40c5-83a0-241e3a151f6c" id="cphBody_aResource">Resources</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+            <div class="footer clearfix">
+                Copyright &copy; 2017&nbsp;Dietitians of Canada. All rights reserved.&nbsp; | &nbsp;
+                <a href="default.aspx">Home</a>&nbsp; | &nbsp;
+                <a href="background_and_acknowledgment.aspx" target="_blank">Background &amp; Acknowledgement</a>&nbsp; | &nbsp;
+                <a href="http://www.dietitians.ca/About-Us/Terms-of-Use.aspx" target="_blank">Terms of Use</a>&nbsp; | &nbsp;
+                <a href="http://www.dietitians.ca/About-Us/Privacy-Policy.aspx" target="_blank">Privacy Policy</a>&nbsp; | &nbsp;
+
+                <a href="/toddler/results_feedback.aspx?lang=fr&id=13252&s=46e2420b-b6f9-40c5-83a0-241e3a151f6c&q=GE">Français</a>
+                <a href="http://www.dietitians.ca" target="_blank"><img src="img/dc_logo.png" alt="Dietitians of Canada" /></a>
+            </div>
+        </div> <!--! end of #container -->
+        </form>
+
+        <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript">window.jQuery || document.write('<script src="Scripts/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+
+        <!-- scripts -->
+        <script src="Scripts/vendor/jquery-ui-1.9.2.custom.min.js" type="text/javascript"></script>
+        <script src="Scripts/main.js" type="text/javascript"></script>
+        <script src="Scripts/plugins.js" defer="defer"></script>
+        <script src="Scripts/scripts.js" defer="defer"></script>
+        <!-- end scripts -->
+
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-17027102-20']);
+            _gaq.push(['_setDomainName', 'nutritionscreen.ca']);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+
+
+
+<style type="text/css">
+/* ROLL-OVER TOOL TIPS (INLINE GLOSSARY  */
+#dhtmltooltip{
+position: absolute;
+left: -300px;
+width: 150px;
+border: 1px solid #000000;
+padding: 2px;
+background-color: #EDEDED;
+visibility: hidden;
+z-index: 1001;
+/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135, strength=3);
+}
+#dhtmlpointer{ position:absolute; left: -300px; z-index: 1002; visibility: hidden; }
+
+span.tip { font-weight: bold ; color: green; cursor:pointer;}
+* html span.tip { padding: 0 0 1px 0; }
+span.tip span.tip { border-bottom:none; }
+
+a span.tip { text-decoration: none; }
+
+dl.glossaryTerm { font-size: 11px; margin: 5px;  }
+dl.glossaryTerm p { line-height:initial; margin-bottom:0; }
+dl.glossaryTerm ul { margin-top:0; }
+dl.glossaryTerm dt { font-weight: bold; color: black; }
+dl.glossaryTerm dd { margin: 0; }
+dl.glossaryTerm dd img { padding: 5px; }
+
+.clearFix:after, .checkBoxList:after, .radioList:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+html .clearfix { height: 1%; }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+</style>
+
+<script language="vbscript">
+
+    Function ReplaceText(strText,strTextToReplace)
+
+        ReplaceText = Replace(strText,strTextToReplace, "")
+
+    End Function
+
+</script>
+
+<script type="text/javascript">
+    String.prototype.trim = function () {
+        return this.replace(/^\s+|\s+$/g, ""); //replace(/^\s*/, "").replace(/\s*$/, "");
+    }
+
+	var arrGlossaryTerms = new Array(2);
+	var arrGlossaryAlt1 = new Array(2);
+	var arrGlossaryAlt2 = new Array(2);
+	var arrGlossaryAlt3 = new Array(2);
+	var arrGlossaryAlt4 = new Array(2);
+	var arrAcronymn = new Array(2);
+	var arrGlossaryDescription = new Array(2);
+	var strFullTip = '';
+
+
+		arrGlossaryTerms[0] = 'Canada’s Food Guide';
+		arrGlossaryAlt1[0] = '';
+		arrGlossaryAlt2[0] = '';
+		arrGlossaryAlt3[0] = '';
+		arrGlossaryAlt4[0] = '';
+		if (arrAcronymn[0]!=''){
+		arrAcronymn[0] = 'CFT';
+		}
+		else{
+		arrAcronymn[0] = 'CFT';
+		}
+
+		arrGlossaryDescription[0] = '<dl class="glossaryTerm clearFix"><dt></dt><dd class="clearFix"><p><b>Canada&#8217;s Food Guide</b> provides:</p><ul>	<li>a guideline for the <b>number</b> of Food Guide Servings a toddler, 24-36 months, should aim for each day</li>	<li>an idea of <b>what </b>foods to serve at each meal</li></ul><p><b>For toddlers aged 18-23 months, there is no recommended number of Canada Food Guide Servings for each Food Group. Offer a variety of foods from each of the Food Groups every day.</b></p><p>A <b>Food Guide Serving</b> is:</p><ul>    <li>a <b>reference </b>amount to help understand the amount of food recommended each day from each of the four Food Groups</li>    <li><b>not</b> a recommended portion size for a meal or snack for toddlers</li></ul><p>Young children may not eat <b>one (1)</b> Food Guide Serving at one sitting. You can divide the Food Guide Servings and offer them over the day.</p><p>Let your child decide how much and which foods he/she wants to eat from the food choices you offer.</p><p>The Toddler NutriSTEP&#174; questionnaire asks <b>how many times a day</b> your child eats foods from the four Food Groups.</p></dd></dl>';
+
+
+		arrGlossaryTerms[1] = 'Guide alimentaire canadien';
+		arrGlossaryAlt1[1] = '';
+		arrGlossaryAlt2[1] = '';
+		arrGlossaryAlt3[1] = '';
+		arrGlossaryAlt4[1] = '';
+		if (arrAcronymn[1]!=''){
+		arrAcronymn[1] = 'CFT';
+		}
+		else{
+		arrAcronymn[1] = 'CFT';
+		}
+
+		arrGlossaryDescription[1] = '<dl class="glossaryTerm clearFix"><dt></dt><dd class="clearFix"><p>Le <b>Guide alimentaire canadien</b> donne :</p><ul>    <li>une indication du <b>nombre</b> de portions du Guide alimentaire qu&#8217;un tout-petit , (de 24 &#224; 36 mois), devrait manger chaque jour.</li>    <li>une id&#233;e de <b>quels </b>aliments il faut servir &#224; chaque repas.</li></ul><p><b>Pour les tout-petits de 18 &#224; 23 mois, il n&#8217;y a pas de nombre de portions du Guide alimentaire canadien recommand&#233; pour chaque groupe alimentaire. Offrez une vari&#233;t&#233; d&#8217;aliments de chacun des groupes alimentaires chaque jour.</b></p><p>Une <b>portion du Guide alimentaire</b> :</p><ul>    <li>est une quantit&#233; de <b>r&#233;f&#233;rence </b>pour aider &#224; comprendre la quantit&#233; d&#8217;aliments recommand&#233;e chaque jour de chacun des quatre groupes alimentaires.</li>    <li>n&#8217;est pas une portion recommand&#233;e pour un repas ou un go&#251;ter.</li></ul><p>Votre enfant peut ne pas manger <b>une (1)</b> portion du Guide alimentaire en une seule fois. Vous pouvez diviser les portions du Guide alimentaire et les offrir dans diff&#233;rents repas ou collations durant la journ&#233;e.</p><p>Laissez votre enfant d&#233;cider de la quantit&#233; et quels aliments il veut manger &#224; partir des choix que vous lui offrez.</p><p>Le questionnaire NutriSTEP<sup>&#174;</sup> pour les tout-petits demande <b>combien de fois par jour</b> votre enfant mange des aliments d&#8217;un des quatre groupes alimentaires.</p></dd></dl>';
+
+
+function ignoreSegment(arr, seg, index, body)
+// 2009 April 9, encode does not work in some circumstances, so replaced by ignoreMessage function
+{
+    return body.replace(arr[index],"__XXXXX" + seg + index + "XXXXX__");
+}
+function recoverSegment(arr, seg, index, body)
+// 2009 April 9, encode does not work in some circumstances, so replaced decode by recoverMessage function
+{
+    return body.replace("__XXXXX" + seg + index + "XXXXX__", arr[index]);
+
+}
+
+	function IsIgnoredTerm(term){
+		var arrTerms = new Array(2)
+		var ismatch = false;
+		arrTerms[0] = 'sensitivity';
+		arrTerms[1] = 'mean';
+		arrTerms[2] = 'reliable';
+		arrTerms[3] = 'reliability';
+
+		for (var i=0;i<arrTerms.length;i++){
+			//alert(arrTerms[i] + ' - ' + term)
+			if (arrTerms[i]==term.toLowerCase()){
+				ismatch = true
+				//alert('g');
+			}
+
+		}
+
+		return ismatch;
+	}
+
+	function UnderlineTerms(){
+
+		var elem_content = document.getElementById('glossary_search')
+		if (!elem_content) //2008 Oct 30, resolve JavaScript error when no container
+		    return;
+    	var sContent = elem_content.innerHTML;
+
+		//ignore h4s
+
+		//var regexph4 = new RegExp('<h4([^9]*)</h4>','gi')
+		var regexph4 = new RegExp('<h4.*?>[\r\n]*?(.*?)[\r\n]*?</h4>','gi')
+		var phArrayh4 = sContent.match(regexph4);
+
+		try{
+			for ( var i=0 ; i<phArrayh4.length;i++){
+				//alert("h4 - " + phArrayh4[i]);
+				//sContent = sContent.replace(phArrayh4[i],encode(phArrayh4[i]))
+				sContent=ignoreSegment(phArrayh4, "phArrayh4",i, sContent);
+				//alert("after ignore h4" + sContent);
+			}
+		}
+		catch(err){
+		//nothing
+		}
+		//alert('Before Anchor: ' + sContent);
+		/*----------- IGNORE ANCHOR TAGS ---------*/
+
+		//var regexpA = new RegExp('<a ([^9]*)</a>','gi')
+		var regexpA = new RegExp('<a.*?>(.*?)</a>','gi')
+		var phArrayA = sContent.match(regexpA);
+
+		try{
+			for ( var i=0 ; i<phArrayA.length;i++){
+				//alert(phArrayA[i]);
+				//sContent = sContent.replace(phArrayA[i],encode(phArrayA[i]));
+				sContent=ignoreSegment(phArrayA, "phArrayA",i, sContent);
+			}
+		}
+		catch(err){
+		//nothing
+		}
+
+		//added by Joen Jia on 2009 Aug 21st, ignore "-" linked words
+		//alert(sContent);
+		var dashReplacement = "XXX_dash_XXX";
+		sContent=sContent.replace(/-/g,dashReplacement);
+		//alert(sContent);
+		//updated 2009 Jan 21, change RegExp to case sencitive, but try to change the case of first char of main term.
+		//also change RegExp to added "\\b" to check the whole word only
+		//udpated May 27 2009 again, make main term ignore case
+		for (var i = 0; i<arrGlossaryTerms.length;i++){
+		    //alert(arrGlossaryTerms[i]);
+			arrGlossaryTerms[i] = arrGlossaryTerms[i].trim();
+			arrAcronymn[i] = arrAcronymn[i].trim();
+			arrGlossaryAlt1[i] = arrGlossaryAlt1[i].trim();
+			arrGlossaryAlt2[i] = arrGlossaryAlt2[i].trim();
+			arrGlossaryAlt3[i] = arrGlossaryAlt3[i].trim();
+			arrGlossaryAlt4[i] = arrGlossaryAlt4[i].trim();
+			if (!IsIgnoredTerm(arrGlossaryTerms[i]))
+			{
+				//if (OnlyUnderLineFirstOccurence(arrGlossaryTerms[i]))
+				//{
+				//	var re = new RegExp('\\b'+ arrGlossaryTerms[i].replace(/-/g,dashReplacement) + '\\b' , 'i');
+				//}
+				//else
+				//{
+					var re = new RegExp('\\b'+ arrGlossaryTerms[i].replace(/-/g,dashReplacement) + '\\b', 'gi');
+				//}
+
+				try{
+				var phArrayx = sContent.match(re);
+				sContent = sContent.replace(re,'<span class="tip" onMouseover="ddrivetip(arrGlossaryDescription['+i+'],600);" onMouseout="hideddrivetip();"  >'+phArrayx[0]+'</span>');
+				//alert(phArrayx[0]);
+				}
+				catch(err){
+				//nothing
+				}
+
+
+
+
+
+				if (arrGlossaryAlt1[i]!=''){
+					var re1 = new RegExp('\\b'+ arrGlossaryAlt1[i].replace(/-/g,dashReplacement)+ '\\b' , 'i');
+					//var re1 = new RegExp('\\b'+ arrGlossaryAlt1[i].replace(/-/g,dashReplacement)+ '\\b' , 'gi');
+					//sContent = sContent.replace(re1,'<span class="tip"  onMouseover="ddrivetip(arrGlossaryDescription['+i+'],600);" onMouseout="hideddrivetip();"  >'+arrGlossaryAlt1[i]+'</span>');
+
+					try{
+					var phArrayx = sContent.match(re1);
+
+					sContent = sContent.replace(re1,'<span class="tip" onMouseover="ddrivetip(arrGlossaryDescription['+i+'],600);" onMouseout="hideddrivetip();"  >'+phArrayx[0]+'</span>');
+					//alert(phArrayx[0]);
+					}
+					catch(err){
+					//nothing
+					}
+
+
+				}
+
+				if (arrGlossaryAlt2[i]!=''){
+					var re2 = new RegExp('\\b'+arrGlossaryAlt2[i].replace(/-/g,dashReplacement) + '\\b' , 'i');
+					//var re2 = new RegExp('\\b'+arrGlossaryAlt2[i].replace(/-/g,dashReplacement) + '\\b' , 'gi');
+
+
+					//sContent = sContent.replace(re2,'<span class="tip"  onMouseover="ddrivetip(arrGlossaryDescription['+i+'],600);" onMouseout="hideddrivetip();"  >'+arrGlossaryAlt2[i]+'</span>');
+
+					try{
+					var phArrayx = sContent.match(re2);
+					sContent = sContent.replace(re2,'<span class="tip" onMouseover="ddrivetip(arrGlossaryDescription['+i+'],600);" onMouseout="hideddrivetip();"  >'+phArrayx[0]+'</span>');
+					//alert(phArrayx[0]);
+					}
+					catch(err){
+					//nothing
+					}
+
+
+				}
+
+				if (arrGlossaryAlt3[i]!=''){
+					var re3 = new RegExp('\\b'+arrGlossaryAlt3[i].replace(/-/g,dashReplacement) + '\\b' , 'gi');
+
+
+					//sContent = sContent.replace(re3,'<span class="tip"  onMouseover="ddrivetip(arrGlossaryDescription['+i+'],600);" onMouseout="hideddrivetip();"  >'+arrGlossaryAlt3[i]+'</span>');
+
+					try{
+					var phArrayx = sContent.match(re3);
+					sContent = sContent.replace(re3,'<span class="tip" onMouseover="ddrivetip(arrGlossaryDescription['+i+'],600);" onMouseout="hideddrivetip();"  >'+phArrayx[0]+'</span>');
+					//alert(phArrayx[0]);
+					}
+					catch(err){
+					//nothing
+					}
+
+
+				}
+
+				if (arrGlossaryAlt4[i]!=''){
+					var re4 = new RegExp('\\b'+arrGlossaryAlt4[i].replace(/-/g,dashReplacement) + '\\b' , 'gi');
+
+
+					//sContent = sContent.replace(re4,'<span class="tip"  onMouseover="ddrivetip(arrGlossaryDescription['+i+'],600);" onMouseout="hideddrivetip();"  >'+arrGlossaryAlt4[i]+'</span>');
+
+					try{
+					var phArrayx = sContent.match(re4);
+					sContent = sContent.replace(re4,'<span class="tip" onMouseover="ddrivetip(arrGlossaryDescription['+i+'],600);" onMouseout="hideddrivetip();"  >'+phArrayx[0]+'</span>');
+					//alert(phArrayx[0]);
+					}
+					catch(err){
+					//nothing
+					}
+
+
+				}
+
+				if (arrAcronymn[i]!=''){
+					//var re2 = new RegExp('\\b'+arrAcronymn[i] + '\\b', 'g');
+
+
+					//if (OnlyUnderLineFirstOccurence(arrGlossaryTerms[i]))
+					//{
+						var re2 = new RegExp('[\\b|\\s]'+arrAcronymn[i].replace(/-/g,dashReplacement)+ '\\b');
+					//}
+					//else
+					//{
+					//	var re2 = new RegExp('[\\b|\\s]'+arrAcronymn[i].replace(/-/g,dashReplacement) + '\\b', 'g');
+					//}
+					sContent = sContent.replace(re2,'&nbsp;<span class="tip"  onMouseover="ddrivetip(arrGlossaryDescription['+i+'],600);" onMouseout="hideddrivetip();"  >'+arrAcronymn[i]+'</span>');
+
+				}
+
+			}
+
+		}
+
+		//added by Joen Jia on 2009 Aug 21, recover the dash
+		var dashReg = new RegExp(dashReplacement,'g');
+		sContent=sContent.replace(dashReg,"-");
+
+		try{
+		for ( var i=0 ; i<phArrayh4.length;i++){
+			//alert('g');
+			//sContent = sContent.replace(encode(phArrayh4[i]),phArrayh4[i]);
+			sContent = recoverSegment(phArrayh4, "phArrayh4", i, sContent);
+			//alert("after H4 recover " + sContent);
+		}
+		}
+		catch(Err){
+			//nothing
+		}
+		//alert('Second Last: ' + sContent);
+		/*-------------------------*/
+		try{
+		for ( var i=0 ; i<phArrayA.length;i++){
+			//alert('g');
+			//sContent = sContent.replace(encode(phArrayA[i]),phArrayA[i]);
+			sContent = recoverSegment(phArrayA, "phArrayA", i, sContent);
+		}
+		}
+		catch(Err){
+			//nothing
+		}
+		/*-------------------------*/
+
+		try
+		{
+		    var tmp = '__XXXXX__';
+    		sContent = ReplaceText(sContent,tmp);
+    	}
+    	catch (e)
+    	{
+    	    //alert("javascript");
+            var h4tag = new RegExp("__XXXXX__" , "gi");
+    		sContent = sContent.replace(h4tag,"");
+    	}
+		//alert(sContent);
+
+		elem_content.innerHTML = sContent;
+	}
+
+	function ShowGlossary(which){
+		//alert(arrGlossaryDescription[which]);
+		document.getElementById('glossarytermwindow').innerHTML=arrGlossaryDescription[which];
+		document.getElementById('glossarytermwindow').style.display='';
+	}
+
+
+	//try(){
+		UnderlineTerms()
+	//}
+	//catch(err){
+		//do nothing
+	//}
+
+
+function getInternetExplorerVersion() {
+    var rv = -1; // Return value assumes failure.
+    if (navigator.appName == 'Microsoft Internet Explorer') {
+        var ua = navigator.userAgent;
+        var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+        if (re.exec(ua) != null)
+            rv = parseFloat(RegExp.$1);
+    }
+    return rv;
+}
+
+/***********************************************
+* Cool DHTML tooltip script II- � Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var offsetfromcursorX=12 //Customize x offset of tooltip
+var offsetfromcursorY=10 //Customize y offset of tooltip
+
+var offsetdivfrompointerX=10 //Customize x offset of tooltip DIV relative to pointer image
+var offsetdivfrompointerY=14 //Customize y offset of tooltip DIV relative to pointer image. Tip: Set it to (height_of_pointer_image-1).
+
+document.write('<div id="dhtmltooltip"></div>') //write out tooltip DIV
+document.write('<img id="dhtmlpointer" src="./img/glossary_arrow_down.gif">') //write out pointer image
+
+var ie=document.all
+var ie8;
+
+if (ie) {
+    if (getInternetExplorerVersion() >= 8.0)
+        ie8 = true;
+    else
+        ie8 = false;
+}
+var ns6=document.getElementById && !document.all
+var enabletip=false
+if (ie||ns6)
+var tipobj=document.all? document.all["dhtmltooltip"] : document.getElementById? document.getElementById("dhtmltooltip") : ""
+
+var pointerobj=document.all? document.all["dhtmlpointer"] : document.getElementById? document.getElementById("dhtmlpointer") : ""
+
+function ietruebody(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function ddrivetip(thetext, thewidth, thecolor){
+
+if (ns6||ie){
+if (typeof thewidth!="undefined") tipobj.style.width=thewidth+"px"
+if (typeof thecolor!="undefined" && thecolor!="") tipobj.style.backgroundColor=thecolor
+tipobj.innerHTML=thetext
+enabletip=true
+return false
+}
+}
+
+function positiontip(e){
+if (enabletip){
+var nondefaultpos=false
+var curX = (ns6) ? e.pageX : /*(ie8) ? event.x :*/ event.x + ietruebody().scrollLeft;
+var curY = (ns6) ? e.pageY : /*(ie8) ? event.y : */event.y + ietruebody().scrollTop;
+
+//Find out how close the mouse is to the corner of the window
+var winwidth=ie&&!window.opera? ietruebody().clientWidth : window.innerWidth-20
+var winheight=ie&&!window.opera? ietruebody().clientHeight : window.innerHeight-20
+
+var rightedge=ie&&!window.opera? winwidth-event.clientX-offsetfromcursorX : winwidth-e.clientX-offsetfromcursorX
+var bottomedge=ie&&!window.opera? winheight-event.clientY-offsetfromcursorY : winheight-e.clientY-offsetfromcursorY
+
+var leftedge=(offsetfromcursorX<0)? offsetfromcursorX*(-1) : -1000
+
+//if the horizontal distance isn't enough to accomodate the width of the context menu
+if (rightedge<tipobj.offsetWidth){
+//move the horizontal position of the menu to the left by it's width
+tipobj.style.left=curX-tipobj.offsetWidth+"px"
+nondefaultpos=true
+}
+else if (curX<leftedge)
+tipobj.style.left="5px"
+else{
+//position the horizontal position of the menu where the mouse is positioned
+tipobj.style.left=curX+offsetfromcursorX-offsetdivfrompointerX+"px"
+pointerobj.style.left=curX+offsetfromcursorX+"px"
+}
+
+//same concept with the vertical position
+if (bottomedge<tipobj.offsetHeight){
+tipobj.style.top=curY-tipobj.offsetHeight-offsetfromcursorY+"px"
+nondefaultpos=true
+}
+else{
+tipobj.style.top=curY+offsetfromcursorY+offsetdivfrompointerY+"px"
+pointerobj.style.top=curY+offsetfromcursorY+"px"
+}
+tipobj.style.visibility="visible"
+if (!nondefaultpos)
+pointerobj.style.visibility="visible"
+else
+pointerobj.style.visibility="hidden"
+}
+}
+
+function hideddrivetip(){
+if (ns6||ie){
+enabletip=false
+tipobj.style.visibility="hidden"
+pointerobj.style.visibility="hidden"
+tipobj.style.left="-1000px"
+tipobj.style.backgroundColor=''
+tipobj.style.width=''
+}
+}
+
+document.onmousemove=positiontip
+
+</script>
+
+
+    </body>
+</html>

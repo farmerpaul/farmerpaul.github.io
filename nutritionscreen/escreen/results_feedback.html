@@ -1,0 +1,214 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+
+        <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+                More info: h5bp.com/b/378 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+        <title>Nutri-eScreen&reg;</title>
+
+        <meta name="author" content="Jeff Hughes" />
+        <meta name="description" content="" />
+
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        <!-- CSS: implied media=all -->
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="/css/responsive-escreen.css" />
+        <!-- end CSS-->
+
+        <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+        <!-- All JavaScript at the bottom, except for Modernizr / Respond.
+                Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+                For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
+        <!-- <script src="./scripts/libs/modernizr-2.0.6.min.js"></script> -->
+
+        <script type="text/javascript" src="./scripts/custom-form-elements.js"></script>
+        <script type="text/javascript" src="./jwplayer/jwplayer.js"></script>
+
+    <script type='text/javascript'>
+        function startAudio() {
+            document.getElementById('ctl00_ContentPlaceHolder1_audio').style.display = 'none';
+
+            jwplayer('mediaspace').setup({
+                'flashplayer': './jwplayer/player.swf',
+                'file': './jwplayer/eScreen4.mp3',
+                'controlbar': 'bottom',
+                'width': '243',
+                'height': '24'
+            });
+
+            jwplayer().play();
+        }
+    </script>
+    <script type="text/javascript">
+        function toggle(spanId, divId)
+        {
+            if (document.getElementById(divId).style.display == "none")
+            {
+                document.getElementById(divId).style.display = "block";
+                document.getElementById(spanId).innerHTML = "Close Feedback X";
+            }
+            else
+            {
+                document.getElementById(divId).style.display = "none";
+                document.getElementById(spanId).innerHTML = "Open Feedback >";
+            }
+        }
+
+        function toggleArticle(divId)
+        {
+            if (document.getElementById(divId).style.display == "none")
+            {
+                document.getElementById(divId).style.display = "block";
+            }
+            else
+            {
+                document.getElementById(divId).style.display = "none";
+            }
+        }
+    </script>
+
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-17027102-1']);
+          _gaq.push(['_setDomainName', '.nutritionscreen.ca']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+    </head>
+    <body>
+        <form name="aspnetForm" method="post" action="./results_feedback.aspx?id=44284&amp;s=d0c39017-256c-463a-87d6-dcfbecfe8474&amp;q=GE" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTYxMjM4ODAzMg8WBh4CaWQC/NkCHgFzBSRkMGMzOTAxNy0yNTZjLTQ2M2EtODdkNi1kY2ZiZWNmZTg0NzQeAXEFAkdFFgJmD2QWBGYPZBYGZg8WAh4EVGV4dAUZJy4vandwbGF5ZXIvZVNjcmVlbjQubXAzJ2QCAQ8WAh8DBRIiQ2xvc2UgRmVlZGJhY2sgWCJkAgIPFgIfAwURIk9wZW4gRmVlZGJhY2sgPiJkAgEPZBYCAgEPZBYOAhMPFgIeBGhyZWYFTC4vcmVzdWx0c19mZWVkYmFjay5hc3B4P2lkPTQ0Mjg0JnM9ZDBjMzkwMTctMjU2Yy00NjNhLTg3ZDYtZGNmYmVjZmU4NDc0JnE9RFdkAhUPFgIfBAVMLi9yZXN1bHRzX2ZlZWRiYWNrLmFzcHg/aWQ9NDQyODQmcz1kMGMzOTAxNy0yNTZjLTQ2M2EtODdkNi1kY2ZiZWNmZTg0NzQmcT1SSWQCFw8WAh8DZWQCGQ9kFhwCAQ9kFgICAw9kFgICCw8WAh4Hb25jbGljawVbdG9nZ2xlQXJ0aWNsZSgnY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9yZXN1bHRzX2ZlZWRiYWNrX1EwMV9kaXZMZWFybk1vcmUnKTsgcmV0dXJuIGZhbHNlO2QCAw9kFgICAw9kFgICCQ8WAh8FBVt0b2dnbGVBcnRpY2xlKCdjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX3Jlc3VsdHNfZmVlZGJhY2tfUTAyX2RpdkxlYXJuTW9yZScpOyByZXR1cm4gZmFsc2U7ZAIFD2QWAgIDD2QWAgIJDxYCHwUFW3RvZ2dsZUFydGljbGUoJ2N0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfcmVzdWx0c19mZWVkYmFja19RMDNfZGl2TGVhcm5Nb3JlJyk7IHJldHVybiBmYWxzZTtkAgcPZBYCAgMPZBYCAgkPFgIfBQVbdG9nZ2xlQXJ0aWNsZSgnY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9yZXN1bHRzX2ZlZWRiYWNrX1EwNF9kaXZMZWFybk1vcmUnKTsgcmV0dXJuIGZhbHNlO2QCCQ9kFgICAw9kFgICCw8WAh8FBVt0b2dnbGVBcnRpY2xlKCdjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX3Jlc3VsdHNfZmVlZGJhY2tfUTA1X2RpdkxlYXJuTW9yZScpOyByZXR1cm4gZmFsc2U7ZAILD2QWAgIDD2QWAgILDxYCHwUFW3RvZ2dsZUFydGljbGUoJ2N0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfcmVzdWx0c19mZWVkYmFja19RMDZfZGl2TGVhcm5Nb3JlJyk7IHJldHVybiBmYWxzZTtkAg0PZBYCAgMPZBYCAgsPFgIfBQVbdG9nZ2xlQXJ0aWNsZSgnY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9yZXN1bHRzX2ZlZWRiYWNrX1EwN19kaXZMZWFybk1vcmUnKTsgcmV0dXJuIGZhbHNlO2QCDw9kFgICAw9kFgICCw8WAh8FBVt0b2dnbGVBcnRpY2xlKCdjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX3Jlc3VsdHNfZmVlZGJhY2tfUTA4X2RpdkxlYXJuTW9yZScpOyByZXR1cm4gZmFsc2U7ZAIRD2QWAgIDD2QWAgIJDxYCHwUFW3RvZ2dsZUFydGljbGUoJ2N0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfcmVzdWx0c19mZWVkYmFja19RMDlfZGl2TGVhcm5Nb3JlJyk7IHJldHVybiBmYWxzZTtkAhMPZBYCAgMPZBYCAgsPFgIfBQVbdG9nZ2xlQXJ0aWNsZSgnY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9yZXN1bHRzX2ZlZWRiYWNrX1ExMF9kaXZMZWFybk1vcmUnKTsgcmV0dXJuIGZhbHNlO2QCFQ9kFgICAw9kFgICCw8WAh8FBVt0b2dnbGVBcnRpY2xlKCdjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX3Jlc3VsdHNfZmVlZGJhY2tfUTExX2RpdkxlYXJuTW9yZScpOyByZXR1cm4gZmFsc2U7ZAIXD2QWAgIDD2QWAgIJDxYCHwUFW3RvZ2dsZUFydGljbGUoJ2N0bDAwX0NvbnRlbnRQbGFjZUhvbGRlcjFfcmVzdWx0c19mZWVkYmFja19RMTJfZGl2TGVhcm5Nb3JlJyk7IHJldHVybiBmYWxzZTtkAhkPZBYCAgMPZBYCAgsPFgIfBQVbdG9nZ2xlQXJ0aWNsZSgnY3RsMDBfQ29udGVudFBsYWNlSG9sZGVyMV9yZXN1bHRzX2ZlZWRiYWNrX1ExM19kaXZMZWFybk1vcmUnKTsgcmV0dXJuIGZhbHNlO2QCGw9kFgICAw9kFgICCw8WAh8FBVt0b2dnbGVBcnRpY2xlKCdjdGwwMF9Db250ZW50UGxhY2VIb2xkZXIxX3Jlc3VsdHNfZmVlZGJhY2tfUTE0X2RpdkxlYXJuTW9yZScpOyByZXR1cm4gZmFsc2U7ZAIbDxYCHgdWaXNpYmxlaGQCHQ8WBB8EBVQuL3Jlc3VsdHNfZmVlZGJhY2tfb3B0aW9ucy5hc3B4P2lkPTQ0Mjg0JnM9ZDBjMzkwMTctMjU2Yy00NjNhLTg3ZDYtZGNmYmVjZmU4NDc0JnE9R0UfBmhkAh8PFgQfBAVWLi9yZXN1bHRzX2ZlZWRiYWNrX3Jlc291cmNlcy5hc3B4P2lkPTQ0Mjg0JnM9ZDBjMzkwMTctMjU2Yy00NjNhLTg3ZDYtZGNmYmVjZmU4NDc0JnE9R0UfBmhkZAYecUfBh7TWgiY4Ay2JVv7i8PqHs26A6AJ0l5NwLxFE" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F2E680C0" />
+        <div class="container">
+            <div class="header clearfix">
+                <div class="header_title">
+                    <a href="./default.aspx"><img src="img/escreen_logo.png" alt="Nutri-eScreen&reg;" /></a>
+
+                </div>
+                <div class="header_contact">
+                    <div class="contact_text">In Ontario, talk to a Registered Dietitian for free.</div>
+                    <div class="phone_num">1-877-510-510-2</div>
+
+                </div>
+            </div>
+
+    <div class="main page3 results_page" role="main">
+        <div class="progress_container">
+            <div class="progress_bar"><div class="progress_indicator" style="width:603px"></div><img src="img/progress_line.png" style="left:200px" /><img src="img/progress_line.png" style="left:397px" /><img src="img/progress_line.png" style="left:594px" /></div>
+            <ul class="progress_steps">
+                <li><strong>Step 1</strong> Your Info</li>
+                <li class="progress_step2"><strong>Step 2</strong> The Survey</li>
+                <li class="progress_step3"><strong>Step 3</strong> Your Results</li>
+                <li class="progress_step4"><strong>Step 4</strong> Your Resources</li>
+            </ul>
+        </div>
+        <div class="content clearfix">
+            <div id="ctl00_ContentPlaceHolder1_audio" class="audio_help"><a href="#" onclick="startAudio()">Click for Audio Help</a></div>
+            <div id='mediaspace' class="audio_help" style="display: none">Loading...</div>
+            <h2>Eating Habits Survey: <span class="subtitle">Your Results</span></h2>
+            <p>You have completed the Eating Habits Survey.  You can now look at your Results. You can click on the green bar on the left-hand side to see What You Are Doing Well; OR you can click on the yellow bar on the right-hand side to see where you have Room For Improvement.
+	    <br /><br />
+	    You will be able to read the details for each question in the section you choose. At any time, you can also choose to move to the other section by clicking on the green or yellow bar.</p>
+            <div class="results_good"><a href="./results_feedback.aspx?id=44284&s=d0c39017-256c-463a-87d6-dcfbecfe8474&q=DW" id="ctl00_ContentPlaceHolder1_aResultsFilter1">What You Are Doing Well</a></div>
+            <div class="results_bad"><a href="./results_feedback.aspx?id=44284&s=d0c39017-256c-463a-87d6-dcfbecfe8474&q=RI" id="ctl00_ContentPlaceHolder1_aResultsFilter2">Room For Improvement</a></div>
+            <p></p>
+            <div class="results_container">
+                <dl id="ctl00_ContentPlaceHolder1_dlResultsList">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </dl>
+
+                <div class="results_end_buttons clearfix">
+                    <div class="end_button"></div>
+                    <div class="end_button"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <div class="footer clearfix">
+                <div class="footer_left">
+                    <div class="footer_links">
+                        <a href="default.aspx" title="Home">Home</a>&nbsp; | &nbsp;
+                        <a href="background.aspx" title="Background & Acknowledegment" target="_blank">Background & Acknowledegment</a>&nbsp; | &nbsp;
+                        <a href="http://www.eatrightontario.ca/en/seniors" title="ERO" target="_blank">Resources</a>&nbsp; | &nbsp;
+                        <a href="http://www.dietitians.ca/About-Us/Terms-of-Use.aspx" target="_blank">Terms of Use</a><br />
+                        <a href="http://www.dietitians.ca/About-Us/Privacy-Policy.aspx" target="_blank">Privacy Policy</a>&nbsp; | &nbsp;
+                        <a href="/escreen/results_feedback.aspx?lang=fr&id=44284&s=d0c39017-256c-463a-87d6-dcfbecfe8474&q=GE">Français</a>
+                    </div>
+                    <div class="copyright">Copyright &copy; 2017&nbsp;Dietitians of Canada. All rights reserved.</div>
+                    <div class="copyright">&reg; Registered trademark of Dietitians of Canada.</div>
+                </div>
+                <div class="footer_logos">
+                    <a href="#"><img src="img/home_ero_logo.png" alt="EatRight Ontario" /></a><a href="#"><img src="img/home_dc_logo.png" alt="Dietitians of Canada" /></a>
+                </div>
+            </div>
+        </div> <!--! end of #container -->
+
+        <!-- JavaScript at the bottom for fast page loading -->
+
+        <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>-->
+
+        <!-- scripts -->
+        <!--<script src="js/plugins.js" defer="defer"></script>
+        <script src="js/scripts.js" defer="defer"></script>-->
+        <!-- end scripts -->
+
+
+        <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
+        <!--<script>
+            window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+            Modernizr.load({
+              load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+            });
+        </script>-->
+
+        <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+             chromium.org/developers/how-tos/chrome-frame-getting-started -->
+        <!--[if lt IE 7 ]>
+          <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+          <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+        <![endif]-->
+        </form>
+    </body>
+</html>
