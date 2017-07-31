@@ -44,6 +44,12 @@
 .results_buttons a {
   font-weight: normal; }
 
+#cphBody_divMain [style*="position:relative"] {
+  position: static !important; }
+  #cphBody_divMain [style*="position:relative"] > .content {
+    margin: 0 auto;
+    width: 522px; }
+
 @media (max-width: 749px) {
   .container {
     margin-left: auto;
@@ -220,9 +226,6 @@
 
   ol ol {
     margin-left: 0 !important; }
-
-  #cphBody_divMain [style*="position:relative"] {
-    position: static !important; }
 
   .page2 .left_column p.left_image {
     margin: 0 auto 35px;

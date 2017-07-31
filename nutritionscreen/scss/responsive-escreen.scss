@@ -404,7 +404,7 @@
 }
 
 // Fix help text popup on mobile layout < 360px.
-@media (max-width: 359px) {
+@include smallMobile {
   .TelerikModalOverlay {
     height: 110% !important;
     width: 112% !important;
@@ -412,6 +412,6 @@
     top: -5% !important;
   }
   .helpText {
-    width: 306px;
+    width: 276px;
   }
 }

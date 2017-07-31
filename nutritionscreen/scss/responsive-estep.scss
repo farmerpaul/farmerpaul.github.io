@@ -13,6 +13,13 @@
 .results_buttons a {
   font-weight: normal;
 }
+#cphBody_divMain [style*="position:relative"] {
+  position: static !important;
+  > .content {
+    margin: 0 auto;
+    width: 522px;
+  }
+}
 
 // MOBILE LAYOUT ADJUSTMENTS - ESTEP
 
@@ -209,9 +216,6 @@
   }
   ol ol {
     margin-left: 0 !important;
-  }
-  #cphBody_divMain [style*="position:relative"] {
-    position: static !important;
   }
   .page2 .left_column p.left_image {
     margin: 0 auto 35px;
