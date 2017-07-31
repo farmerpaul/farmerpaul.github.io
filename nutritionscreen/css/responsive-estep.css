@@ -70,7 +70,7 @@
       background-size: 106% auto;
       background-position: center -6px;
       border-radius: 6px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
       float: none;
       margin: 0 0 20px;
       padding: 25px 30px;
@@ -119,7 +119,8 @@
     width: auto; } }
   @media (max-width: 749px) and (max-width: 359px) {
     .progress_bar {
-      margin: 0 -16px; } }
+      margin: 0 -16px;
+      transform: scale(0.9); } }
 
 @media (max-width: 749px) {
   .progress_steps {
