@@ -57,8 +57,12 @@
   .header_title img {
     margin-top: 11px;
     max-width: 100%;
-    width: 160px; }
+    width: 160px; } }
+  @media (max-width: 749px) and (max-width: 359px) {
+    .header_title img {
+      width: 150px; } }
 
+@media (max-width: 749px) {
   .header_contact {
     font-family: "Meta Offc", sans-serif;
     letter-spacing: -0.5px;
@@ -142,19 +146,22 @@
         line-height: 17px; }
   .main.results_page .results_good,
   .main.results_page .results_bad {
-    background-size: 100%;
+    background-size: 100% 100%;
     float: none;
     margin: 12px 0; }
     .main.results_page .results_good a,
     .main.results_page .results_bad a {
-      padding-bottom: 3px;
-      padding-top: 7px;
+      padding-top: 10px;
       width: auto !important; }
 
   .progress_bar {
     transform: scaleX(0.4);
-    transform-origin: left; }
+    transform-origin: left; } }
+  @media (max-width: 749px) and (max-width: 359px) {
+    .progress_bar {
+      transform: scaleX(0.36); } }
 
+@media (max-width: 749px) {
   .progress_container {
     height: auto;
     padding-bottom: 11px; }
@@ -244,7 +251,8 @@
     padding: 19px 0 29px; }
 
   .survey_page .next_back .question_number {
-    padding: 0; }
+    padding: 0;
+    width: 30%; }
 
   .results_container table, .results_container tbody, .results_container tr, .results_container td {
     display: block; }

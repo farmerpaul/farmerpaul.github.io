@@ -77,11 +77,12 @@
   .container {
     margin: 17px auto 26px;
   }
-  .header_title {
-    img {
-      margin-top: 11px;
-      max-width: 100%;
-      width: 160px;
+  .header_title img {
+    margin-top: 11px;
+    max-width: 100%;
+    width: 160px;
+    @include smallMobile {
+      width: 150px;
     }
   }
   .header_contact {
@@ -192,12 +193,11 @@
     &.results_page {
       .results_good,
       .results_bad {
-        background-size: 100%;
+        background-size: 100% 100%;
         float: none;
         margin: 12px 0;
         a {
-          padding-bottom: 3px;
-          padding-top: 7px;
+          padding-top: 10px;
           width: auto !important;
         }
       }
@@ -206,6 +206,9 @@
   .progress_bar {
     transform: scaleX((320 / 800));
     transform-origin: left;
+    @include smallMobile {
+      transform: scaleX((288 / 800));
+    }
   }
   .progress_container {
     height: auto;
@@ -309,6 +312,7 @@
   }
   .survey_page .next_back .question_number {
     padding: 0;
+    width: 30%;
   }
   .results_container {
     table, tbody, tr, td {
