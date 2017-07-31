@@ -22,7 +22,6 @@
       left: auto;
       right: auto;
     }
-    width: 320px;
   }
   .header {
     width: auto;
@@ -104,6 +103,9 @@
     height: auto;
     overflow: hidden;
     width: auto;
+    @include smallMobile {
+      margin: 0 -16px;
+    }
   }
   .progress_steps {
     font-size: 12px;
@@ -224,6 +226,10 @@
   .page2 .submit_button, .opinion .submit_button {
     background-position: 0 -1px;
     float: right;
+    @include smallMobile {
+      background-size: 100% 47px;
+      width: 108px;
+    }
   }
   .resources_content .print_button {
     float: left;
@@ -292,6 +298,19 @@
     .next_button {
       margin-top: 0;
     }
+    @include smallMobile {
+      .back_button {
+        padding: 11px 8px 0 57px;
+        width: 99px;
+      }
+      .next_button {
+        padding: 11px 8px 0 52px;
+        width: 64px;
+      }
+      .button {
+        background-size: 100% 47px;
+      }
+    }
   }
   .results_buttons {
     margin-top: 20px;
@@ -332,6 +351,7 @@
   .results_answer_container {
     .right img {
       width: auto !important;
+      max-width: 100%;
     }
     .divider {
       background-size: 100% 100%;

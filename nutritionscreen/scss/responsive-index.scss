@@ -10,7 +10,6 @@
 @include mobile {
   .main {
     margin-bottom: 90px;
-    width: 320px;
   }
   .section.first .left {
     padding: 0;
@@ -29,7 +28,9 @@
     height: 10px;
   }
   .section.third .left {
-    margin: 0 30px 40px;
+    background-size: contain;
+    margin: 0 9.375% 40px;
+    width: 81.25%;
   }
   .section.third .left.nutriescreen {
     margin-bottom: 0;

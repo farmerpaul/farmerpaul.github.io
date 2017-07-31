@@ -15,13 +15,14 @@
 @media (max-width: 749px) {
   .container {
     transform: scale(1.25);
-    transform-origin: top center; } }
+    transform-origin: top center;
+    width: 320px; } }
 @media (max-width: 524px) {
   .container {
     transform: none; } }
 @media (max-width: 359px) {
   .container {
-    transform: scale(0.9); } }
+    width: 288px; } }
 
 @font-face {
   font-family: 'Meta Offc';
@@ -51,8 +52,7 @@
     background-attachment: fixed; }
 
   .container {
-    margin: 17px auto 26px;
-    width: 320px; }
+    margin: 17px auto 26px; }
 
   .header_title img {
     margin-top: 11px;

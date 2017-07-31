@@ -29,13 +29,14 @@
 @media (max-width: 749px) {
   .container {
     transform: scale(1.25);
-    transform-origin: top center; } }
+    transform-origin: top center;
+    width: 320px; } }
 @media (max-width: 524px) {
   .container {
     transform: none; } }
 @media (max-width: 359px) {
   .container {
-    transform: scale(0.9); } }
+    width: 288px; } }
 
 .survey_questions select {
   background: white; }
@@ -46,8 +47,7 @@
 @media (max-width: 749px) {
   .container {
     margin-left: auto;
-    margin-right: auto;
-    width: 320px; }
+    margin-right: auto; }
 
   .header {
     width: auto; }
@@ -116,8 +116,12 @@
     border-radius: 6px;
     height: auto;
     overflow: hidden;
-    width: auto; }
+    width: auto; } }
+  @media (max-width: 749px) and (max-width: 359px) {
+    .progress_bar {
+      margin: 0 -16px; } }
 
+@media (max-width: 749px) {
   .progress_steps {
     font-size: 12px;
     line-height: 13px;
@@ -231,8 +235,13 @@
 
   .page2 .submit_button, .opinion .submit_button {
     background-position: 0 -1px;
-    float: right; }
+    float: right; } }
+  @media (max-width: 749px) and (max-width: 359px) {
+    .page2 .submit_button, .opinion .submit_button {
+      background-size: 100% 47px;
+      width: 108px; } }
 
+@media (max-width: 749px) {
   .resources_content .print_button {
     float: left;
     margin: 15px 0; }
@@ -285,8 +294,18 @@
     margin-right: -3px;
     width: auto; }
     .results_end_buttons .next_button {
-      margin-top: 0; }
+      margin-top: 0; } }
+  @media (max-width: 749px) and (max-width: 359px) {
+    .results_end_buttons .back_button {
+      padding: 11px 8px 0 57px;
+      width: 99px; }
+    .results_end_buttons .next_button {
+      padding: 11px 8px 0 52px;
+      width: 64px; }
+    .results_end_buttons .button {
+      background-size: 100% 47px; } }
 
+@media (max-width: 749px) {
   .results_buttons {
     margin-top: 20px;
     width: auto; }
@@ -316,7 +335,8 @@
     background: linear-gradient(to bottom, #f4ae61, #e49e52); }
 
   .results_answer_container .right img {
-    width: auto !important; }
+    width: auto !important;
+    max-width: 100%; }
   .results_answer_container .divider {
     background-size: 100% 100%;
     width: 100%; }
