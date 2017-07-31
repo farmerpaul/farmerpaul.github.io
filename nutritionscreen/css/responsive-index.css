@@ -35,7 +35,7 @@
     transform: none; } }
 @media (max-width: 359px) {
   .main {
-    transform: scaleX(0.9); } }
+    transform: scale(0.9); } }
 
 @media (max-width: 749px) {
   .main {

@@ -23,7 +23,7 @@ $mobile-breakpoint: $orig-width * .75;
     }
     // Slightly scale down mobile layout < 360px.
     @media (max-width: 359px) {
-      transform: scaleX(.9);
+      transform: scale(.9);
     }
   }
 }
