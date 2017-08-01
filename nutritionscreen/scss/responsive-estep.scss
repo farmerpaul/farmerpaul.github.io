@@ -78,9 +78,10 @@
     }
   }
   .resources_page .resources_content a {
-    overflow: hidden;
-    max-width: 100%;
     display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    vertical-align: bottom;
   }
   .home_banner_inner {
     overflow: hidden;

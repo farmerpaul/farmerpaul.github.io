@@ -94,9 +94,10 @@
     line-height: 35px !important; }
 
   .resources_page .resources_content a {
-    overflow: hidden;
+    display: inline-block;
     max-width: 100%;
-    display: inline-block; }
+    overflow: hidden;
+    vertical-align: bottom; }
 
   .home_banner_inner {
     overflow: hidden;
